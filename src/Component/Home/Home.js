@@ -5,7 +5,7 @@ const Home =()=>{
     return(
         <>
         <Slider/>
-        <About/>
+        {/* <About/> */}
         </>
     )
 }

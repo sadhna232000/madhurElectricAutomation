@@ -11,7 +11,7 @@ const SubNavbar=()=>{
     return(
         <>
 <Box bg='#333333' pt='10px' pb='10px'>
-    <Container maxW='container.lg'>
+    <Container maxW='70%' m='auto'>
 <Flex   justifyContent={"space-between"}>
     <HStack gap='30px'>
         <Box><HStack><ImPhone color="#fff" fontSize={'15px'}/> <Content>+91234567890</Content></HStack></Box>

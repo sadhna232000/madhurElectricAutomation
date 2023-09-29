@@ -1,9 +1,11 @@
-import { Box, Container, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Box, Container, Grid, GridItem, Img, Text } from "@chakra-ui/react";
 import React from "react";
+import slider from '../../Assets/slider1.png'
+import Breadcrumbs from "../../Common/Breadcrumbs";
 const About = () => {
     return (
         <>
-            <Box h='500px'>
+            {/* <Box h='500px'>
                 <Container maxW='75%' padding='2em 0'>
                     <Grid templateColumns='repeat(6, 1fr)' gap={6}>
                         <GridItem colSpan={3}>
@@ -30,7 +32,8 @@ const About = () => {
 
                     </Grid>
                 </Container>
-            </Box>
+            </Box> */}
+           <Breadcrumbs name='ABOUT'/>
 
         </>
     )

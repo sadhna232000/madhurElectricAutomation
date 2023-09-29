@@ -9,21 +9,35 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
+import './css/Style.css'
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Navbar from './Common/Navbar';
 import SubNavbar from './Common/SubNavbar';
 import Home from './Component/Home/Home';
+import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
+import About from './Component/Home/About';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-          {/* <ColorModeSwitcher justifySelf="flex-end" /> */}
+    <>
+    <SubNavbar/>
+      <Navbar/>
+<Router>
+
+  <Routes>
+    <Route path="/home" element={<Home />} />
+    <Route path="/about" element={<About />} />
+  </Routes>
+</Router>
+</>
+    // <ChakraProvider theme={theme}>
+    /* <Box textAlign="center" fontSize="xl">
+          <ColorModeSwitcher justifySelf="flex-end" />
           <SubNavbar/>
       <Navbar/>
       <Home/>
-      </Box>
-    </ChakraProvider>
+      </Box> */
+    // </ChakraProvider>
   );
 }
 
