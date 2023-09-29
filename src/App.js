@@ -16,6 +16,7 @@ import SubNavbar from './Common/SubNavbar';
 import Home from './Component/Home/Home';
 import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
 import About from './Component/Home/About';
+import Contact from './Component/Contact/Contact';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
   <Routes>
     <Route path="/home" element={<Home />} />
     <Route path="/about" element={<About />} />
+    <Route path="/contact" element={<Contact />} />
   </Routes>
 </Router>
 </>

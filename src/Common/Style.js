@@ -37,21 +37,31 @@ color: #333333;
                                    
 `
 export const Label=styled(Link)`
-// border-bottom : 1px dashed grey;
-    font-size: 13px;
-    font-weight: 400;
+border-bottom : 1px dashed darkgray;
+    font-size: 14px;
+    padding-bottom:5px;
+    font-weight: 500;
     letter-spacing:1px;
-    font-family: system-ui ;
+    font-family: sans-serif ;
     color: #808080;
-   text-transform:uppercase;
            text-decoration:none !important;
             cursor:pointer;
 `
 export const Head =styled(Heading)`
-color='#fff'
-font-size='20px'
-font-weight='700'
-text-transform='uppercase'
+color:#fff !important;
+font-size:42px;
+font-weight:600;
+font-family:sans-serif;
+text-transform:uppercase;
+`
+export const MedHeading= styled(Text)`
+color:#333333;
+font-size:23px;
+font-family:sans-serif;
 
-
+`
+export const Parcontent =styled(Text)`
+font-size:14px;
+font-family:sans-serif;
+line-height:25px;
 `

@@ -1,4 +1,4 @@
-import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Img } from "@chakra-ui/react";
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Container, Img } from "@chakra-ui/react";
 import React from "react";
 import { Head } from "./Style";
 import slider from "../Assets/slider1.png"
@@ -6,18 +6,22 @@ const Breadcrumbs =(props)=>{
     return(
         <>
          <Box w='100%' position='relative'>
+            <Container maxW='70%' m='auto'>
+
+          
             <Box position='absolute' top='30px' zIndex='9999'>
                 <Head>{props.name}</Head>
-                <Breadcrumb>
+                <Breadcrumb color='#fff' pt={'10px'}>
   <BreadcrumbItem>
-    <BreadcrumbLink href='/home'>Home</BreadcrumbLink>
+    <BreadcrumbLink textDecoration='none' href='/home'  color='grey' fontFamily={'sans-serif'}>{props.home}</BreadcrumbLink>
   </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage>
-    <BreadcrumbLink>About</BreadcrumbLink>
+  <BreadcrumbItem isCurrentPage >
+    <BreadcrumbLink color='#fff' fontFamily={'sans-serif'}>{props.page}</BreadcrumbLink>
   </BreadcrumbItem>
 </Breadcrumb>
                 </Box>
-            <Img src={slider} w='100%' height= '160px'
+                </Container>
+            <Img src={slider} w='100%' height= '140px'
     objectFit= 'cover'
     objectPosition= 'bottom'/>
             </Box>

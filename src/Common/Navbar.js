@@ -262,15 +262,15 @@ cabel
 </Grid>
                             </Box>
                         </Text>
-                        <Top href="/">
+                        {/* <Top href="/">
                             Client
                         </Top>
 
                         <Top href="/">
                             Dealers
-                        </Top>
+                        </Top> */}
 
-                        <Top href="/">
+                        <Top href="/contact">
                             Contact
                         </Top>
 
