@@ -65,3 +65,15 @@ font-size:14px;
 font-family:sans-serif;
 line-height:25px;
 `
+export const Product =styled(Box)`
+
+background: #f8f8f8 ;
+border:1px solid #f1f1f1;
+color:#111111;
+font-weight:500'
+
+padding: 11px 15px;
+font-size:17px;
+font-family:sans-serif;
+letter-spacing:1px;
+`

@@ -192,11 +192,12 @@ const Navbar = () => {
                         <Top href="/about">
                             About
                         </Top>
-                        <Text className="nav-item dropdown">
-                            <HStack>
-                            <Top href="/">
+                        <Top href="/product">
                                 Product
                             </Top>
+                        <Text className="nav-item dropdown">
+                            <HStack>
+                            
                             <RiArrowDropDownLine/>
                             </HStack>
                            
