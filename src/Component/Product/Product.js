@@ -3,12 +3,12 @@ import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
 import Footer from "../../Common/Footer";
 import junction from '../../Assets/juction-box.png'
-import { MedHeading, Parcontent } from "../../Common/Style";
+import { MedHeading, Parcontent, Prolabel } from "../../Common/Style";
 const Product=()=>{
     return(
         <>
  <Breadcrumbs name='PRODUCT' home='Home' page='Product' />
-            <Container maxW='70%' m='auto' py='40px'>
+          <Container maxW='70%' m='auto' py='40px'>
 
             <Grid
 //   h='200px'
@@ -20,7 +20,8 @@ const Product=()=>{
    <GridItem colSpan={4}>
     <Stack>
     <Img src={junction}  h='325px'/>
-    <MedHeading pb='15px'>JUCTION BOX</MedHeading>
+    
+    <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
     <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
     <Parcontent>
@@ -30,29 +31,32 @@ We are offering high quality electrical enclosures and junction boxes. These jun
 <Parcontent>
 Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
     </Parcontent>
+  <Grid templateColumns='repeat(6, 1fr)'>
+<GridItem></GridItem>
+  </Grid>
     </Stack>
     </GridItem>
 
 
   <GridItem  colSpan={2}>
-    <Stack gap={4}>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
-   <Product>Juction Box</Product>
+  <Stack gap={10}>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel href="/home">Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
+   <Prolabel>Juction Box</Prolabel>
     </Stack>
 
-  </GridItem> 
+  </GridItem>  
   
 </Grid>
             </Container>
