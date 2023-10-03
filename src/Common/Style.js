@@ -61,7 +61,7 @@ font-family:sans-serif;
 
 `
 export const Parcontent =styled(Text)`
-font-size:14px;
+font-size:15px;
 font-family:sans-serif;
 line-height:25px;
 `
