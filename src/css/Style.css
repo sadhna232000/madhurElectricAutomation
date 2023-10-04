@@ -72,3 +72,40 @@
     margin: 5px 0;
   }
   
+  .prev.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #bd0000;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: -31%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right: 49px;
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: bold;
+
+  }
+  .next.arrow{
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #bd0000;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: -31%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right: 0;
+    font-weight: bold;
+    border-radius: 50px;
+  }

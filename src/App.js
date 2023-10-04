@@ -18,8 +18,12 @@ import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom
 import About from './Component/Home/About';
 import Contact from './Component/Contact/Contact';
 import Product from './Component/Product/Product';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 function App() {
+  AOS.init();
   return (
     <>
     <SubNavbar/>
@@ -28,6 +32,7 @@ function App() {
 
   <Routes>
     <Route path="/home" element={<Home />} />
+    <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/product" element={<Product />} />

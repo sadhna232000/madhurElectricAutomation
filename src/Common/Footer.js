@@ -58,13 +58,13 @@ const Footer = () => {
                             <Label href="/home">
                                 Home
                                 </Label>
-                                <Label>
+                                <Label href="/about">
                                    About
                                 </Label>
-                                <Label>
+                                <Label href="/product">
                                   Products
                                 </Label>
-                                <Label>
+                                <Label href="/contact">
                                    Contact
                                 </Label>
                             </SimpleGrid>
