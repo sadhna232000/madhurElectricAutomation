@@ -7,50 +7,64 @@ import { AiFillMail } from "react-icons/ai";
 const Footer = () => {
     return (
         <>
-            <Box bg='rgb(226 229 236)!important' h='300px'>
+            <Box bg='rgb(226 229 236)!important' h='380px'>
                 <Container maxW='70%' m='auto' py='40px'>
                     <Grid templateColumns='repeat(3, 1fr)' gap='40px'  >
-                        <GridItem>
-                            <Img src={logo} w='100px' />
+                        <GridItem colSpan={1}>
+                            <Img src={logo} w='220px' />
                             <Parcontent pt='15px' pb='10px'>P.NO. 218 , 60 Feet Road, Prestige Garden, Industrial Area, Bindayaka, Jaipur(Raj.) - 302012</Parcontent>
                             <Box><HStack><ImPhone color="#000" fontSize={'15px'} /> <Parcontent>+91234567890</Parcontent></HStack></Box>
                             <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectricals@gmail.com</Parcontent></HStack></Box>
                         </GridItem>
-                        <GridItem>
-                            <MedHeading pb='10px' fontSize='16px !important'>Electical Products</MedHeading>
+                        <GridItem colSpan={1} w='400px'>
+                            <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                             <HStack gap='40px'>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
                                 <Label>
-                                    Electrical Earthing
+                                Electrical Panels
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                    Motor Control Centers
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                HT / LT Distribution Panel
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                    Metering Panel
+                                </Label>
+                                <Label>
+                                    AMF Panel
+                                </Label>
+                                <Label>
+                                Industrial Panels
                                 </Label>
                             </SimpleGrid>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
                             <Label>
-                                    Electrical Earthing
+                                    APFC Panels
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                    Transmission Lines
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                 Switch Yards
                                 </Label>
                                 <Label>
-                                    Electrical Earthing
+                                    Breaker
+                                </Label>
+                                <Label>
+                                Transformers
+                                </Label>
+                                <Label>
+                                DG Sets
                                 </Label>
                             </SimpleGrid>
-                            </HStack>
+                      
+                            </HStack> 
+                         
                         </GridItem>
-                        <GridItem pl={'80px'}>
+                        <GridItem colSpan={1} >
                             <MedHeading pb='10px' fontSize='16px !important'>Usefull Links</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                             <SimpleGrid columns={1} spacing={20} py='20px'  >
