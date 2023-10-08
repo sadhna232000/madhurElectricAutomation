@@ -8,55 +8,55 @@ const Footer = () => {
     return (
         <>
             <Box bg='rgb(226 229 236)!important' h='380px'>
-                <Container maxW='70%' m='auto' py='40px'>
+                <Container maxW='75%' m='auto' py='40px'>
                     <Grid templateColumns='repeat(3, 1fr)' gap='40px'  >
                         <GridItem colSpan={1}>
                             <Img src={logo} w='220px' />
                             <Parcontent pt='15px' pb='10px'>P.NO. 218 , 60 Feet Road, Prestige Garden, Industrial Area, Bindayaka, Jaipur(Raj.) - 302012</Parcontent>
-                            <Box><HStack><ImPhone color="#000" fontSize={'15px'} /> <Parcontent>+91234567890</Parcontent></HStack></Box>
-                            <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectricals@gmail.com</Parcontent></HStack></Box>
+                            <Box><HStack><ImPhone color="#000" fontSize={'15px'} /> <Parcontent>+91 80057 75964 , +91 94140 46267 </Parcontent></HStack></Box>
+                            <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>Madhurelectric@Gmail.com</Parcontent></HStack></Box>
                         </GridItem>
                         <GridItem colSpan={1} w='400px'>
                             <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                             <HStack gap='40px'>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
-                                <Label>
+                                <Label href="/electrical-panel">
                                 Electrical Panels
                                 </Label>
-                                <Label>
+                                <Label href="/motor-controls">
                                     Motor Control Centers
                                 </Label>
-                                <Label>
+                                <Label href="/HT-LT-distribution-panel">
                                 HT / LT Distribution Panel
                                 </Label>
-                                <Label>
+                                <Label href="metering-panel">
                                     Metering Panel
                                 </Label>
-                                <Label>
+                                <Label href="/amf-panels">
                                     AMF Panel
                                 </Label>
-                                <Label>
+                                <Label href="/industrial-panels">
                                 Industrial Panels
                                 </Label>
                             </SimpleGrid>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
-                            <Label>
+                            <Label href="/APFC-panel">
                                     APFC Panels
                                 </Label>
-                                <Label>
+                                <Label href="/transmission-lines">
                                     Transmission Lines
                                 </Label>
-                                <Label>
+                                <Label href="/switch-yards">
                                  Switch Yards
                                 </Label>
-                                <Label>
+                                <Label href="/breakers">
                                     Breaker
                                 </Label>
-                                <Label>
+                                <Label href="/transformers">
                                 Transformers
                                 </Label>
-                                <Label>
+                                <Label href="/DG-sets">
                                 DG Sets
                                 </Label>
                             </SimpleGrid>
@@ -75,7 +75,7 @@ const Footer = () => {
                                 <Label href="/about">
                                    About
                                 </Label>
-                                <Label href="/product">
+                                <Label href="/switch-yards">
                                   Products
                                 </Label>
                                 <Label href="/contact">
@@ -91,7 +91,7 @@ const Footer = () => {
     float= 'left'
     backgroundColor= '#222222'
     padding='20px 0px'>
-<Container maxW='70%' m='auto'>
+<Container maxW='75%' m='auto'>
 <Center><Label borderBottom='none !important'>Copyright© 2023. Madhur Electric Automation All Rights Reserved.</Label></Center>
 </Container>
 

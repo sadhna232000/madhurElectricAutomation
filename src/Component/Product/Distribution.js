@@ -1,3 +1,4 @@
+
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
@@ -5,10 +6,10 @@ import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
 import junction from "../../Assets/juction-box.png"
-const APFCpanel =()=>{
+const Distribution =()=>{
     return(
         <>
-          <Breadcrumbs name='APFC PANELS' home='Home' page='APFC Panels' />
+          <Breadcrumbs name=' HT/LT Distribution Panel'  home='Home' page='HT/LT Distribution Panel' />
             <Container maxW='75%' m='auto' py='40px'>
 
                 <Grid
@@ -50,4 +51,4 @@ const APFCpanel =()=>{
         </>
     )
 }
-export default APFCpanel
+export default Distribution

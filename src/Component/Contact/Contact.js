@@ -9,7 +9,7 @@ const Contact=()=>{
     return(
         <>
  <Breadcrumbs name='CONTACT' home='Home' page='Contact' />
-            <Container maxW='70%' m='auto' py='80px'>
+            <Container maxW='75%' m='auto' py='80px'>
 <Text textAlign='center' fontSize= '24px'
     fontFamily= 'sans-serif'
     letterSpacing= '1px'
@@ -22,7 +22,7 @@ const Contact=()=>{
     
 <ImPhone color="#bd0000" fontSize={'35px'}/>
 <MedHeading fontSize='20px !important' fontWeight='500'>Call us</MedHeading>
-<Parcontent lineHeight='20px !important'>+9148293849</Parcontent>
+<Parcontent lineHeight='20px !important'>+91 80057 75964 , +91 94140 46267</Parcontent>
 </VStack>
 
 </Box>
@@ -40,7 +40,7 @@ const Contact=()=>{
     
 <AiFillMail color="#bd0000" fontSize={'35px'}/>
 <MedHeading fontSize='20px !important' fontWeight='500'>Email</MedHeading>
-<Parcontent lineHeight='20px !important'>madhurelectricals@gmail.com</Parcontent>
+<Parcontent lineHeight='20px !important'>Madhurelectric@Gmail.com</Parcontent>
 </VStack>
 
 </Box>

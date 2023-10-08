@@ -9,8 +9,8 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
 <>
-          <Box  position="sticky" top="-1px" zIndex="100" bg='#fff' borderBottom= '1px solid #80808038' boxShadow= 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
-           <Container maxW='70%' m='auto'>               
+          <Box  position="sticky" top="-1px" zIndex="9999999" bg='#fff' borderBottom= '1px solid #80808038' boxShadow= 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
+           <Container maxW='75%' m='auto'>               
             <Flex alignItems="center" justifyContent={'space-between'}>
                     <Img src={Logo} h='110px' objectPosition={'center'} />
                     <Spacer />
@@ -38,7 +38,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer' href='/product'>Electrical Panels</Link>
+            cursor='pointer' href='/electrical-panel'>Electrical Panels</Link>
     </MenuItem>
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
       
@@ -50,7 +50,8 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Motor Control Center</Link>
+            cursor='pointer'
+            href="/motor-controls">Motor Control Center</Link>
     </MenuItem>
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
       
@@ -62,7 +63,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Metering Panel</Link>
+            cursor='pointer' href="/metering-panel">Metering Panel</Link>
     </MenuItem>
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
       
@@ -74,7 +75,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>AMF Panel</Link>
+            cursor='pointer' href="/amf-panels">AMF Panel</Link>
     </MenuItem>
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
       
@@ -86,7 +87,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>APFC Panels</Link>
+            cursor='pointer' href="/APFC-panel">APFC Panels</Link>
     </MenuItem>
     <MenuItem bg='#fff !important' border='none !important'  p='5px'borderBottom='1px dashed darkgray !important'>
       
@@ -98,7 +99,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Transmission Lines</Link>
+            cursor='pointer' href="/transmission-lines">Transmission Lines</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -111,7 +112,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Switch Yards</Link>
+            cursor='pointer' href="/switch-yards">Switch Yards</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -124,7 +125,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Breaker</Link>
+            cursor='pointer' href="/breakers">Breaker</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -137,7 +138,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Transformers</Link>
+            cursor='pointer' href="/transformers">Transformers</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -150,7 +151,7 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Industrial Panels</Link>
+            cursor='pointer' href="/industrial-panels">Industrial Panels</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -163,7 +164,8 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>DG Sets</Link>
+            cursor='pointer'
+            href="/DG-sets">DG Sets</Link>
     </MenuItem>
    
     <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
@@ -176,59 +178,8 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Cable Earthlings</Link>
-    </MenuItem>
-   
-    
-    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer'>HT / LT Distribution Panel</Link>
-    </MenuItem>
-    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer'>Electrical Installations Services</Link>
-    </MenuItem>
-   
-    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer'>Hospital Electrical Services</Link>
-    </MenuItem>
-   
-    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer'>Electrical Drivesquality Analysts</Link>
+            cursor='pointer' 
+            href="/cabel-earthling">Cable Earthlings</Link>
     </MenuItem>
    
     
@@ -242,7 +193,59 @@ const Navbar = () => {
     fontFamily= 'sans-serif'
     color= '#808080'
            textDecoration='none !important'
-            cursor='pointer'>Electical Sub Stations</Link>
+            cursor='pointer' href="/HT-LT-distribution-panel">HT / LT Distribution Panel</Link>
+    </MenuItem>
+    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+      
+      <Link 
+    fontSize= '14px'
+    paddingBottom='5px'
+    fontWeight= '500'
+    letterSpacing='1px'
+    fontFamily= 'sans-serif'
+    color= '#808080'
+           textDecoration='none !important'
+            cursor='pointer' href="/electrical-installation">Electrical Installations Services</Link>
+    </MenuItem>
+   
+    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+      
+      <Link 
+    fontSize= '14px'
+    paddingBottom='5px'
+    fontWeight= '500'
+    letterSpacing='1px'
+    fontFamily= 'sans-serif'
+    color= '#808080'
+           textDecoration='none !important'
+            cursor='pointer' href="/hospital-services">Hospital Electrical Services</Link>
+    </MenuItem>
+   
+    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+      
+      <Link 
+    fontSize= '14px'
+    paddingBottom='5px'
+    fontWeight= '500'
+    letterSpacing='1px'
+    fontFamily= 'sans-serif'
+    color= '#808080'
+           textDecoration='none !important'
+            cursor='pointer' href="/electrical-analytes">Electrical Drivesquality Analysts</Link>
+    </MenuItem>
+   
+    
+    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+      
+      <Link 
+    fontSize= '14px'
+    paddingBottom='5px'
+    fontWeight= '500'
+    letterSpacing='1px'
+    fontFamily= 'sans-serif'
+    color= '#808080'
+           textDecoration='none !important'
+            cursor='pointer' href="/electrical-stations">Electical Sub Stations</Link>
     </MenuItem>
    
    
@@ -250,8 +253,8 @@ const Navbar = () => {
     
   </MenuList>
 </Menu>
-                      <Box className={window.location.pathname === '/product' ? 'act' : 'nav'}>
-                      <Link   className={window.location.pathname === '/product' ? 'active' : 'nav'} href='/product'> Product</Link> 
+                      <Box className={window.location.pathname === '/contact' ? 'act' : 'nav'}>
+                      <Link   className={window.location.pathname === '/contact' ? 'active' : 'nav'} href='/contact'> Contact</Link> 
                       </Box>
                     
 {/* <NavLink></NavLink> */}

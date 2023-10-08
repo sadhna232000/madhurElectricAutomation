@@ -11,13 +11,13 @@ const SubNavbar=()=>{
     return(
         <>
 <Box bg='#333333' pt='10px' pb='10px'>
-    <Container maxW='70%' m='auto'>
+    <Container maxW='75%' m='auto'>
 <Flex   justifyContent={"space-between"}>
     <HStack gap='30px'>
-        <Box><HStack><ImPhone color="#fff" fontSize={'15px'}/> <Content>+91234567890</Content></HStack></Box>
-   <Box><HStack><AiFillMail color="#fff" fontSize={'15px'}/> <Content>madhurelectricals@gmail.com</Content></HStack></Box>
-    </HStack>
-    <CustomButton content='Contact' radius='0' width='100px' height='30px' size='14px' color='#fff' bgcolor='#bd0000'/>
+        <Box><HStack><ImPhone color="#fff" fontSize={'15px'}/> <Content>+91 80057 75964 , +91 94140 46267</Content></HStack></Box>
+   <Box><HStack><AiFillMail color="#fff" fontSize={'15px'}/> <Content>Madhurelectric@Gmail.com</Content></HStack></Box>
+    </HStack> 
+    <CustomButton href="/contact" content='Contact' radius='0' width='100px' height='30px' size='14px' color='#fff' bgcolor='#bd0000'/>
 </Flex>
 
 

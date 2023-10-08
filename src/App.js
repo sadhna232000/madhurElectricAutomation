@@ -20,6 +20,23 @@ import Contact from './Component/Contact/Contact';
 import Product from './Component/Product/Product';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Electricalpanel from './Component/Product/Electricpanel';
+import TransmissionLines from './Component/Product/TransmissionLines';
+import Transformers from './Component/Product/Transformers';
+import Switchyards from './Component/Product/Switchyards';
+import Motorcontrols from './Component/Product/Motorcontrols';
+import Meteringpanel from './Component/Product/Meteringpanel';
+import Industrialpanels from './Component/Product/Industrialpanels';
+import HospitalServices from './Component/Product/HospitalServices';
+import Electricalinstallation from './Component/Product/ElectricalInstallation';
+import Electricalanalytes from './Component/Product/Electricalanalytes';
+import DGsets from './Component/Product/DGsets';
+import CabelEarthing from './Component/Product/CableEarthing';
+import APFCpanel from './Component/Product/APFCpanel';
+import Amfpanels from './Component/Product/Amfpanels';
+import ElectricalSubStations from './Component/Product/ElectricalSubStations';
+import Electricpanel from './Component/Product/Electricpanel';
+import Distribution from './Component/Product/Distribution';
 // ..
 
 function App() {
@@ -35,7 +52,24 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
-    <Route path="/product" element={<Product />} />
+    <Route path="/electrical-panel" element={<Electricpanel />} />
+    <Route path="/transmission-lines" element={<TransmissionLines />} />
+    <Route path="/transformers" element={<Transformers />} />
+    <Route path="/switch-yards" element={<Switchyards />} />
+    <Route path="/motor-controls" element={<Motorcontrols />} />
+    <Route path="/metering-panel" element={<Meteringpanel />} />
+    <Route path="/industrial-panels" element={<Industrialpanels />} />
+    <Route path="/hospital-services" element={<HospitalServices />} />
+    <Route path="/electrical-stations" element={<ElectricalSubStations />} />
+    <Route path="/electrical-installation" element={<Electricalinstallation />} />
+    <Route path="/electrical-analytes" element={<Electricalanalytes />} />
+    <Route path="/DG-sets" element={<DGsets />} />
+    <Route path="/cabel-earthling" element={<CabelEarthing />} />
+    <Route path="/APFC-panel" element={<APFCpanel />} />
+    <Route path="/amf-panels" element={<Amfpanels />} />
+    <Route path="/breakers" element={<Product />} />
+    <Route path="/HT-LT-distribution-panel" element={<Distribution />} />
+   
   </Routes>
 </Router>
 </>

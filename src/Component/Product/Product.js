@@ -4,11 +4,12 @@ import { Box, Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/
 import Footer from "../../Common/Footer";
 import junction from '../../Assets/juction-box.png'
 import { MedHeading, Parcontent, Prolabel } from "../../Common/Style";
+import Sidebar from "../../Common/Sidebar";
 const Product=()=>{
     return(
         <>
- <Breadcrumbs name='PRODUCT' home='Home' page='Product' />
-          <Container maxW='70%' m='auto' py='40px'>
+ <Breadcrumbs name='BREAKERS' home='Home' page='Breakers' />
+          <Container maxW='75%' m='auto' py='40px'>
 
             <Grid
 //   h='200px'
@@ -39,22 +40,7 @@ Further, our range of enclosures provides many choices for enclosing electrical 
 
 
   <GridItem  colSpan={2}>
-  <Stack gap={10}>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel href="/home">Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-    </Stack>
+  <Sidebar/>
 
   </GridItem>  
   

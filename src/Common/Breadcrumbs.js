@@ -6,7 +6,7 @@ const Breadcrumbs =(props)=>{
     return(
         <>
          <Box w='100%' position='relative'>
-            <Container maxW='70%' m='auto'>
+            <Container maxW='75%' m='auto'>
 
           
             <Box position='absolute' top='30px' zIndex='9999'>

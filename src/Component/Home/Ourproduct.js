@@ -3,11 +3,16 @@ import React, { useState } from "react";
 import { Label, MedHeading } from "../../Common/Style";
 import product from "../../Assets/ourproduct.jpg"
 import { ImPhone } from "react-icons/im";
+import { IoIosSpeedometer, IoIosSwitch } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
+import { GiElectric } from "react-icons/gi";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { RiBuildingFill, RiWirelessChargingFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 const Ourproduct = () => {
+    const navigate = useNavigate();
     const [isHovered, setIsHovered] = useState(false);
     const [isMouse, setIsMouse] = useState(false);
     const [isMouseHover, setIsMouseHover] = useState(false);
@@ -67,8 +72,8 @@ const Ourproduct = () => {
     return (
         <>
             {/* <Box  position='relative'> */}
-            <Container maxW='70%' m='auto' pt='80px' pb='0px'>
-                <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>BEST ELECTRICAL PRODUCT</MedHeading>
+            <Container maxW='75%' m='auto' pt='80px' pb='0px'>
+                <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>BEST ELECTRICAL SERVICES</MedHeading>
                 {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
                 <Text
                     color='#333333'
@@ -77,89 +82,77 @@ const Ourproduct = () => {
                     fontSize='2.4rem' fontWeight='600' padding='2px 40px'
                     lineHeight='51px'>
 
-                    "Superior Electrical Products for Optimal Performance and Efficiency."
+                    "Superior Electrical Services for Optimal Performance and Efficiency."
                 </Text>
                 <Box py='4rem'>
                 <Slider {...settings}>
       <div>
-      <Center w='290px'  h='250px' m='auto' onMouseEnter={handleMouseEnter}
+      <Center w='290px'  h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/switch-yards")}
       onMouseLeave={handleMouseLeave}  backgroundColor={isHovered ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isHovered ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isHovered ?  '#fff':'#bd0000' } color={isHovered ?'#bd0000':  '#fff'}>
+                        <VStack textAlign='center' gap='10px' px='40px'>
+                                <IoIosSwitch color={isHovered ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Switch Yards</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>They play a crucial role in transmitting, distributing, and controlling electrical power. </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isHovered ?  '#fff':'#bd0000' } color={isHovered ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
                         </VStack>
                     </Center>
       </div>
       <div>
-      <Center  w='290px'  h='250px' m='auto'  onMouseEnter={handleEnter}
+      <Center  w='290px'  h='250px' m='auto'  onMouseEnter={handleEnter} onClick={()=>navigate("/metering-panel")}
       onMouseLeave={handleLeave}  backgroundColor={isMouse ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isMouse ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouse ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isMouse ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isMouse ?  '#fff':'#bd0000' } color={isMouse ?'#bd0000':  '#fff'}>
+                        <VStack textAlign='center' gap='10px' px='40px'>
+                                <IoIosSpeedometer color={isMouse ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouse ? '#fff !important' : '#333333'}>Metering panel</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouse ? '#fff !important' :' #808080'}>  an electrical enclosure  that houses various electrical meters equipment</Label>
+                            <Circle cursor='pointer'  size='45px' bg={isMouse ?  '#fff':'#bd0000' } color={isMouse ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
                         </VStack>
                     </Center>
       </div>
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={mouseEnter}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/cabel-earthling")}
       onMouseLeave={mouseLeave}  backgroundColor={isMouseHover ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isMouseHover ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isMouseHover ?  '#fff':'#bd0000' } color={isMouseHover ?'#bd0000':  '#fff'}>
+                        <VStack textAlign='center' gap='5px' px='40px'>
+                                <RiWirelessChargingFill color={isMouseHover ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>Cable Earthling</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>The primary purposes of cable earthing are stablitiy, safety and Equipment Protection </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isMouseHover ?  '#fff':'#bd0000' } color={isMouseHover ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
                         </VStack>
                     </Center>
       </div>
+     
+   
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterRed}
-      onMouseLeave={handleRed}  backgroundColor={isHoverRed ? '#bd0000' : 'rgb(226 229 236)' }   
-                    >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isHoverRed ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverRed ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverRed ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isHoverRed ?  '#fff':'#bd0000' } color={isHoverRed ?'#bd0000':  '#fff'}>
-                                <BsArrowRight fontSize='25px' />
-                            </Circle>
-                        </VStack>
-                    </Center>
-      </div>
-      <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/industrial-panels")}
       onMouseLeave={handleBlue}  backgroundColor={isHoverBlue ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isHoverBlue ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isHoverBlue ?  '#fff':'#bd0000' } color={isHoverBlue ?'#bd0000':  '#fff'}>
+                        <VStack textAlign='center' gap='11px' px='40px'>
+                                <RiBuildingFill color={isHoverBlue ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>Industrial Panel</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}> These panels are designed to provide protection, organization,</Label>
+                            <Circle cursor='pointer' size='45px' bg={isHoverBlue ?  '#fff':'#bd0000' } color={isHoverBlue ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
                         </VStack>
                     </Center>
       </div>
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterGreen}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/transformers")}
       onMouseLeave={handleGreen}  backgroundColor={isHoverGreen ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
-                        <VStack textAlign='center' gap='15px' px='40px'>
-                                <ImPhone color={isHoverGreen ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Cable wire</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}> Electrical Products for Optimal Performance </Label>
-                            <Circle size='45px' bg={isHoverGreen ?  '#fff':'#bd0000' } color={isHoverGreen ?'#bd0000':  '#fff'}>
+                        <VStack textAlign='center' gap='10px' px='40px'>
+                                <GiElectric color={isHoverGreen ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Transformers</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>It operates on the principle that a changing magnetic field in one coil of wire </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isHoverGreen ?  '#fff':'#bd0000' } color={isHoverGreen ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
                         </VStack>

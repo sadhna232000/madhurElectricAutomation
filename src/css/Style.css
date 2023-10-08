@@ -1,145 +1,200 @@
 /* Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Water+Brush&display=swap');
-*{
-    padding: 0;
-    margin: 0;
+
+* {
+  padding: 0;
+  margin: 0;
 }
-.act{
+
+.act {
   background: #bd0000;
   border-radius: 50px !important;
-  padding:7px 15px !important;
+  padding: 7px 15px !important;
 
 }
-.active{
-  color:#fff;
+
+.active {
+  color: #fff;
   font-size: 14px;
-    font-weight: 600;
-    font-family: system-ui ;
-    text-decoration:none !important;
-   cursor:pointer;
-}
-.css-5bqce9{
-  color: #333333!important ;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    padding:7px 15px !important;
-    font-family: system-ui !important;
-   cursor:pointer !important;
-   border: none !important;
-   background-color: #fff ;
+  font-weight: 600;
+  font-family: system-ui;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-.nav{
-  color: #333333 ;
-    font-size: 14px;
-    font-weight: 600;
-    padding:7px 15px !important;
-    font-family: system-ui ;
-    text-decoration:none !important;
-   cursor:pointer;
+.css-5bqce9 {
+  color: #333333 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 7px 15px !important;
+  font-family: system-ui !important;
+  cursor: pointer !important;
+  border: none !important;
+  background-color: #fff;
 }
+
+.nav {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 15px !important;
+  font-family: system-ui;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
 .navbar {
-    background-color: blue;
-    color: white;
-    /* padding: 10px; */
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 20px;
-  }
-  
-  .nav-item {
-    display: inline-block;
-    /* margin-right: 20px; */
-  }
-  
-  .nav-item a {
-    /* color: white; */
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-toggle::after {
-    content: '▼';
-    margin-left: 5px;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    border:0.01px solid #8080802e;
-    position: absolute;
-    background-color: #fff;
-    list-style: none;
-    padding: 0;
-    z-index: 9999;
-    width: 1000px;
-    transform: translateX(-50%);
-  }
-  
-  .dropdown-item {
-    margin: 0;
-  }
-  
-  .dropdown-item a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-  }
-  
-  .dropdown-item a:hover {
-    background-color: #555;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .divider {
-    height: 1px;
-    background-color: #555;
-    margin: 5px 0;
-  }
-  
-  .prev.arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #bd0000;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: -31%;
-    transform: translateY(-50%);
-    z-index: 1;
-    right: 49px;
-    border-radius: 50px;
-    font-size: 21px;
-    font-weight: bold;
+  background-color: blue;
+  color: white;
+  /* padding: 10px; */
+}
 
-  }
-  .next.arrow{
-    font-size: 21px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #bd0000;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: -31%;
-    transform: translateY(-50%);
-    z-index: 1;
-    right: 0;
-    font-weight: bold;
-    border-radius: 50px;
-  }
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.nav-item {
+  display: inline-block;
+  /* margin-right: 20px; */
+}
+
+.nav-item a {
+  /* color: white; */
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: '▼';
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  border: 0.01px solid #8080802e;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  z-index: 9999;
+  width: 1000px;
+  transform: translateX(-50%);
+}
+
+.dropdown-item {
+  margin: 0;
+}
+
+.dropdown-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-item a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  background-color: #555;
+  margin: 5px 0;
+}
+
+.prev.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -31%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 49px;
+  border-radius: 50px;
+  font-size: 21px;
+  font-weight: bold;
+
+}
+
+.next.arrow {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -31%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 0;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.drop {
+  background: #f8f8f8;
+  /* border:1px solid #f1f1f1; */
+  color: #111111;
+  font-weight: 500;
+  text-decoration: none !important;
+  cursor: pointer;
+  padding: 11px 15px;
+  font-size: 17px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+/* .drop:hover {
+  background-color: #bd0000;
+  color: #fff;
+} */
+
+.actdive {
+  background-color: #bd0000;
+  color: #fff;
+  /* border:1px solid #f1f1f1; */
+  font-weight: 500;
+  text-decoration: none !important;
+  cursor: pointer;
+  padding: 11px 15px;
+  font-size: 17px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.act-lik {
+  /* background: #f8f8f8 ; */
+  font-weight: 500;
+  text-decoration: none !important;
+  font-size: 17px;
+  padding: 11px 15px;
+
+  font-family: sans-serif;
+  color: #111111;
+
+  letter-spacing: 1px;
+}
+
+/* .drop:hover .act-lik {
+  background-color: #bd0000 !important;
+  color: #fff !important;
+} */

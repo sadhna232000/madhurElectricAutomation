@@ -38,7 +38,7 @@ const Testimonial = () => {
 
     return (
         <>
-            <Container maxW='70%' m='auto' pt='40px' pb='60px'>
+            <Container maxW='75%' m='auto' pt='40px' pb='60px'>
             <MedHeading pb='15px'>TESTIMONIAL</MedHeading>
                         <Divider orientation='horizontal'  border='1.5px solid #bd0000' width='100px' />                {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
                 <Text
@@ -63,11 +63,8 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            I would not hesitate to recommend your services . Your professionalism, attention to detail, and commitment to customer satisfaction set you apart from other companies in the industry."</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
@@ -87,11 +84,9 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            The initial phone conversation was not only helpful but also friendly. 
+                            I greatly appreciated  fair pricing structure provided by your company. There were no hidden costs or surprises throughout the process.</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
@@ -111,11 +106,8 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            The technicians who worked on my electrical problem were not only skilled but also efficient. They completed the necessary repairs promptly, ensuring that my electrical systems were safe and functional once again."</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
@@ -135,11 +127,8 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            Your team promptly scheduled an appointment and conducted a thorough assessment of the electrical problem. They took the time to explain the issue in simple terms and discussed potential solutions."</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
@@ -159,11 +148,8 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            Throughout the project, your team maintained clear and open communication. They explained the scope of work, provided updates on progress, and addressed any questions or concerns I had."</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
@@ -183,11 +169,8 @@ const Testimonial = () => {
                     >
                         <Stack>
                             
-                            <Label border='none !important' lineHeight='22px' >"With Ankit Electricals Private Limited,
-                        you will receive expert electrical construction services from
-                        a Diamond Certified Provider. We offer reliable, quality work,
-                        but you don't have to take our word for it. Read what our customers
-                        have said about our services below."</Label>
+                            <Label border='none !important' lineHeight='22px' >"With Madhur Electric Automation,
+                            The quality of the electrical work performed is evident in the results. I am extremely satisfied with the finished product, and I have complete confidence in the safety and functionality of the electrical systems ."</Label>
                             <HStack gap={4}>
                                 <MedHeading fontSize='18px !important' fontWeight='600' color='#bd0000 !important'>John Doe</MedHeading>
                                 <Text fontStyle='italic' fontWeight='300' fontSize='12px'  color='#808080'>Company name</Text>
