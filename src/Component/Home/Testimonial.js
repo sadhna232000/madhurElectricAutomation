@@ -38,7 +38,7 @@ const Testimonial = () => {
 
     return (
         <>
-            <Container maxW='75%' m='auto' pt='40px' pb='60px'>
+            <Container maxW='75%' m='auto' pt='40px' pb='0px'>
             <MedHeading pb='15px'>TESTIMONIAL</MedHeading>
                         <Divider orientation='horizontal'  border='1.5px solid #bd0000' width='100px' />                {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
                 <Text

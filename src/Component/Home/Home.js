@@ -6,6 +6,7 @@ import Footer from "../../Common/Footer";
 import Seprator from "./Seprator";
 import CompanyAbout from "./CompanyAbout";
 import Testimonial from "./Testimonial";
+import Location from "../../Common/Location";
 const Home =()=>{
     return(
         <>
@@ -14,7 +15,7 @@ const Home =()=>{
         <Seprator/>
         <CompanyAbout/>
         <Testimonial/>
-       
+       <Location/>
         <Footer/>
         
         {/* <About/> */}

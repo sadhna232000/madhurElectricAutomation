@@ -41,10 +41,9 @@ const CompanyAbout = () => {
                         <Parcontent fontSize='15px !important' pb='20px' pt='40px' textAlign={'center'} >
                         Madhur Electric Automation, Jaipur was established in the year 2011 
 as a sole proprietorship to manufacturers, suppliers and third party 
-service provider of all type of LT Panels, Transmissions Lines, Motor 
+service provider of all type of LT Panels, Motor 
 Control Centers, HT/LT Distribution Panel, Metering Panel, AMF Panel, 
-APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Contrac- 
-tors, DG Sets, Compound Lights, Consultancy and Liasoning. Under the 
+APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Projects, DG Sets, Consultancy and Liasoning. Under the 
 vigilance of "Mr. Vishnu Gour", the company has served its customers 
 competently.
           </Parcontent>

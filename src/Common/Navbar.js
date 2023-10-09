@@ -9,10 +9,10 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
 <>
-          <Box  position="sticky" top="-1px" zIndex="9999999" bg='#fff' borderBottom= '1px solid #80808038' boxShadow= 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
+          <Box  position="sticky" top="-1px" p='5px' zIndex="9999999" bg='#fff' borderBottom= '1px solid #80808038' boxShadow= 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
            <Container maxW='75%' m='auto'>               
             <Flex alignItems="center" justifyContent={'space-between'}>
-                    <Img src={Logo} h='110px' objectPosition={'center'} />
+                    <Img src={Logo} h='95px' objectPosition={'center'} />
                     <Spacer />
                     <HStack  gap='10px'>
                       <Box className={window.location.pathname === '/home' ? 'act' : 'nav'}>
