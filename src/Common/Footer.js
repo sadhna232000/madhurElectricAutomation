@@ -14,7 +14,7 @@ const Footer = () => {
                             <Img src={logo} w='220px' />
                             <Parcontent pt='15px' pb='10px'>P.NO. 218 , 60 Feet Road, Prestige Garden, Industrial Area, Bindayaka, Jaipur(Raj.) - 302012</Parcontent>
                             <Box><HStack><ImPhone color="#000" fontSize={'15px'} /> <Parcontent>+91 80057 75964 , +91 94140 46267 </Parcontent></HStack></Box>
-                            <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>Madhurelectric@Gmail.com</Parcontent></HStack></Box>
+                            <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectric@gmail.com</Parcontent></HStack></Box>
                         </GridItem>
                         <GridItem colSpan={1} w='400px'>
                             <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>

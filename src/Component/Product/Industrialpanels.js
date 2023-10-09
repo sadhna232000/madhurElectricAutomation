@@ -2,15 +2,16 @@
 
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
-import junction from "../../Assets/juction-box.png"
+import management from "../../Assets/management.jpg"
+import { FaCheck } from "react-icons/fa";
 const Industrialpanels =()=>{
     return(
         <>
-          <Breadcrumbs name='INDUSTRIAL PANELS' home='Home' page='Industrial Panels' />
+          <Breadcrumbs name='LOAD MANAGEMENT PANELS' home='Home' page='Load Management Panels' />
             <Container maxW='75%' m='auto' py='40px'>
 
                 <Grid
@@ -22,21 +23,29 @@ const Industrialpanels =()=>{
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={junction} h='325px' />
+                            <Img src={management} h='555px'  objectFit='contain'/>
 
-                            <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>LOAD MANAGEMENT PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                                We are Leading Supplied of all types of Enclosure and Junction Box in Reputed Make Like: Hensel.</Parcontent>
+                            Load Management Panels, also known as Load Control Panels or Load Shedding Panels, are electrical control panels designed to monitor and manage the distribution of electrical loads in a facility or system. These panels are typically used in industrial, commercial, and residential settings to ensure that electrical demand does not exceed the available supply, prevent overloading of electrical systems, and maintain power quality.</Parcontent>
                             <Parcontent>
-                                We are offering high quality electrical enclosures and junction boxes. These junction boxes are manufactured from top quality materials thus providing maximum satisfaction to our clients.</Parcontent>
+                            Here are some key details and components commonly found in load management panels.</Parcontent>
                             <Parcontent>
                                 Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
                             </Parcontent>
-                            <Grid templateColumns='repeat(6, 1fr)'>
-                                <GridItem></GridItem>
+                            <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Generator Integration</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Voltage Regulation</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Load Shedding Control</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Protection Features</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Load Monitoring</Text></HStack></GridItem>
+                               
+                               
                             </Grid>
+                                                    
+                          
                         </Stack>
                     </GridItem>
                     <GridItem colSpan={2}>

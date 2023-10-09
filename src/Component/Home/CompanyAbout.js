@@ -14,7 +14,7 @@ const CompanyAbout = () => {
                     <GridItem display="flex" justifyContent="end" alignItems="end" position='relative'>
                         <Img src={about} width='88%'
                             objectFit='cover'
-                            height='414px' />
+                            height='414px'  objectPosition='left'/>
                         <Img src={electric} width='50%'
                             left='0px'
                             bottom='-60px'

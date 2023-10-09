@@ -5,15 +5,15 @@ import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
 import electric from "../../Assets/electrical_panel.png"
-import electric3 from "../../Assets/electric3.jpg"
-import electric4 from "../../Assets/electric4.jpg"
+import electric_5 from "../../Assets/electric_5.jpg"
+import electric_6 from "../../Assets/electric_6.jpg"
 import { CgCheck } from "react-icons/cg";
 import { FaCheck } from "react-icons/fa";
 
 const Electricpanel =()=>{
     return(
         <>
-         <Breadcrumbs name='ELECTRICAL PANELS' home='Home' page='Electrical Panels' />
+         <Breadcrumbs name='MAIN LT PANELS' home='Home' page='Main LT Panels' />
             <Container maxW='75%' m='auto' py='40px'>
 
                 <Grid
@@ -27,7 +27,7 @@ const Electricpanel =()=>{
                         <Stack>
                             <Img src={electric} />
 
-                            <MedHeading pb='10px' pt='20px'>Electric Panel</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>Main LT Panel</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
@@ -49,14 +49,14 @@ const Electricpanel =()=>{
                             <Grid  templateColumns='repeat(2, 1fr)' gap={'40px'} py='20px'>
                                   <GridItem>
 <Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-    <Box w='230px'  m='auto'><Img src={electric3} w='230px'/></Box>
+    <Box w='230px'  m='auto'><Img src={electric_6} w='230px'/></Box>
 </Box>
 
 
                                   </GridItem>
                                   <GridItem>
 <Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-<Box w='230px'  m='auto'> <Img src={electric4} w='230px'/></Box>
+<Box w='230px'  m='auto'> <Img src={electric_5} w='230px' h='180px' objectFit='cover'/></Box>
 </Box>
 
 

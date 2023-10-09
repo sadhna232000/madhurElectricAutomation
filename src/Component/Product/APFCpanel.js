@@ -1,14 +1,15 @@
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
-import junction from "../../Assets/juction-box.png"
+import electric_10 from "../../Assets/electric_10.jpg"
+import { FaCheck } from "react-icons/fa";
 const APFCpanel =()=>{
     return(
         <>
-          <Breadcrumbs name='APFC PANELS' home='Home' page='APFC Panels' />
+          <Breadcrumbs name='VFD PANELS' home='Home' page='VFD Panels' />
             <Container maxW='75%' m='auto' py='40px'>
 
                 <Grid
@@ -20,21 +21,27 @@ const APFCpanel =()=>{
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={junction} h='325px' />
+                            <Img src={electric_10} h='325px' />
 
-                            <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>VFD PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                                We are Leading Supplied of all types of Enclosure and Junction Box in Reputed Make Like: Hensel.</Parcontent>
+                            A Variable Frequency Drive (VFD) panel, also known as a Variable Speed Drive (VSD) panel or Inverter panel, is an electrical control panel designed to operate and control electric motors using variable frequency and voltage settings. These panels are commonly used in industrial and commercial applications to regulate the speed and torque of electric motors, thereby offering energy efficiency, precise control, and soft starting capabilities</Parcontent>
                             <Parcontent>
-                                We are offering high quality electrical enclosures and junction boxes. These junction boxes are manufactured from top quality materials thus providing maximum satisfaction to our clients.</Parcontent>
-                            <Parcontent>
-                                Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
-                            </Parcontent>
-                            <Grid templateColumns='repeat(6, 1fr)'>
-                                <GridItem></GridItem>
+                            Here are some key details and components typically found in VFD panels:
+                                </Parcontent>
+                           
+                                <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Motor Control</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>User Interface</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Circuit Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Power Supply</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>EMI/RFI Filters</Text></HStack></GridItem>
+                               
                             </Grid>
+                                                    
+                          
                         </Stack>
                     </GridItem>
                     <GridItem colSpan={2}>

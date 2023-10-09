@@ -2,15 +2,16 @@
 
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
-import junction from "../../Assets/juction-box.png"
+import electric_2 from "../../Assets/electric_2.jpg"
+import { FaCheck } from "react-icons/fa";
 const Motorcontrols =()=>{
     return(
         <>
-          <Breadcrumbs name='MOTOR CONTROLS CENTERS' home='Home' page='Motor Controls Centers' />
+          <Breadcrumbs name='MOTOR CONTROLS PANELS' home='Home' page='Motor Controls Panels' />
             <Container maxW='75%' m='auto' py='40px'>
 
                 <Grid
@@ -22,20 +23,28 @@ const Motorcontrols =()=>{
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={junction} h='325px' />
+                            <Img src={electric_2} h='475px'   width='100%' objectPosition='bottom'
+    objectFit= 'cover'/>
 
-                            <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>MOTOR CONTROLS PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                                We are Leading Supplied of all types of Enclosure and Junction Box in Reputed Make Like: Hensel.</Parcontent>
+                            A motor control panel, also known as a motor control center (MCC) or motor control cabinet, is an electrical enclosure that houses various components for controlling and protecting electric motors in industrial and commercial applications.                                
+                                </Parcontent>
                             <Parcontent>
-                                We are offering high quality electrical enclosures and junction boxes. These junction boxes are manufactured from top quality materials thus providing maximum satisfaction to our clients.</Parcontent>
-                            <Parcontent>
-                                Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
-                            </Parcontent>
-                            <Grid templateColumns='repeat(6, 1fr)'>
-                                <GridItem></GridItem>
+                            Here's a brief overview of motor control panels:                                </Parcontent>
+                         
+                            <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Enclosure</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Motor Starters</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Circuit Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Control Devices</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Control Logic</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Communication Interfaces</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Monitoring and Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Safety Features</Text></HStack></GridItem>
+                               
                             </Grid>
                         </Stack>
                     </GridItem>

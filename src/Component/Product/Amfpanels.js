@@ -1,10 +1,11 @@
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
-import junction from "../../Assets/juction-box.png"
+import electric_2 from "../../Assets/electric_2.jpg"
+import { FaCheck } from "react-icons/fa";
 const Amfpanels = () => {
     return (
         <>
@@ -20,20 +21,25 @@ const Amfpanels = () => {
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={junction} h='325px' />
+                            <Img src={electric_2} h='475px'  objectFit='cover' objectPosition='bottom'/>
 
-                            <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>AMF CUM LT PANEL</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                                We are Leading Supplied of all types of Enclosure and Junction Box in Reputed Make Like: Hensel.</Parcontent>
+                            An AMF (Automatic Mains Failure) panel is an essential component in backup power systems, often used in industrial and commercial settings. Its primary function is to automatically switch the power source from the mains electricity supply to an alternate power source, typically a generator, when it detects a failure or disruption in the mains power supply. 
+                                </Parcontent>
                             <Parcontent>
-                                We are offering high quality electrical enclosures and junction boxes. These junction boxes are manufactured from top quality materials thus providing maximum satisfaction to our clients.</Parcontent>
-                            <Parcontent>
-                                Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
-                            </Parcontent>
-                            <Grid templateColumns='repeat(6, 1fr)'>
-                                <GridItem></GridItem>
+                            Below, I'll describe the key details and components of an AMF panel:                                                                </Parcontent>
+                            
+                            <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Controller</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Generator Control</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Manual Control</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Mains Monitoring</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Automatic Transfer Switch (ATS)</Text></HStack></GridItem>
+                               
+                               
                             </Grid>
                         </Stack>
                     </GridItem>

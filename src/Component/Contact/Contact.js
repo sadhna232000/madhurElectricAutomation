@@ -40,7 +40,7 @@ const Contact=()=>{
     
 <AiFillMail color="#bd0000" fontSize={'35px'}/>
 <MedHeading fontSize='20px !important' fontWeight='500'>Email</MedHeading>
-<Parcontent lineHeight='20px !important'>Madhurelectric@Gmail.com</Parcontent>
+<Parcontent lineHeight='20px !important'>madhurelectric@gmail.com</Parcontent>
 </VStack>
 
 </Box>
