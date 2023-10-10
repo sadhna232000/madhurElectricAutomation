@@ -11,7 +11,7 @@ const Footer = () => {
                 <Container maxW='75%' m='auto' py='40px'>
                     <Grid templateColumns='repeat(3, 1fr)' gap='40px'  >
                         <GridItem colSpan={1}>
-                            <Img src={logo} w='220px' />
+                            <Img src={logo} w='220px'  />
                             <Parcontent pt='15px' pb='10px'>P.NO. 218 , 60 Feet Road, Prestige Garden, Industrial Area, Bindayaka, Jaipur(Raj.) - 302012</Parcontent>
                             <Box><HStack><ImPhone color="#000" fontSize={'15px'} /> <Parcontent>+91 80057 75964 , +91 94140 46267 </Parcontent></HStack></Box>
                             <Box><HStack><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectric@gmail.com</Parcontent></HStack></Box>
@@ -22,42 +22,42 @@ const Footer = () => {
                             <HStack gap='40px'>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
                                 <Label href="/electrical-panel">
-                                Electrical Panels
+                                Main LT Panels
                                 </Label>
                                 <Label href="/motor-controls">
-                                    Motor Control Centers
-                                </Label>
-                                <Label href="/HT-LT-distribution-panel">
-                                HT / LT Distribution Panel
-                                </Label>
-                                <Label href="metering-panel">
-                                    Metering Panel
-                                </Label>
-                                <Label href="/amf-panels">
-                                    AMF Panel
+                                Motor Controls Panels
                                 </Label>
                                 <Label href="/industrial-panels">
-                                Industrial Panels
+                                Load Management Panels
+                                </Label>
+                                <Label href="metering-panel">
+                                    Metering Panels
+                                </Label>
+                                <Label href="/amf-panels">
+                                    AMF Panels
+                                </Label>
+                                <Label href="/cabel-earthling">
+                                Cabeling 
                                 </Label>
                             </SimpleGrid>
                             <SimpleGrid columns={1} spacing={20} py='20px' >
                             <Label href="/APFC-panel">
-                                    APFC Panels
+                            VFD Panels
                                 </Label>
                                 <Label href="/transmission-lines">
                                     Transmission Lines
                                 </Label>
                                 <Label href="/switch-yards">
-                                 Switch Yards
+                                Earthing
                                 </Label>
                                 <Label href="/breakers">
-                                    Breaker
+                                    Breakers
                                 </Label>
                                 <Label href="/transformers">
                                 Transformers
                                 </Label>
                                 <Label href="/DG-sets">
-                                DG Sets
+                                DG Synchronizing Panel
                                 </Label>
                             </SimpleGrid>
                       
@@ -75,7 +75,7 @@ const Footer = () => {
                                 <Label href="/about">
                                    About
                                 </Label>
-                                <Label href="/switch-yards">
+                                <Label href="/DG-sets">
                                   Products
                                 </Label>
                                 <Label href="/contact">

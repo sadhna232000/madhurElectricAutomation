@@ -12,7 +12,7 @@ const Seprator = () => {
                     // textAlign={'center'}
                     letterSpacing='1px'
                     fontSize='18px' lineHeight={'30px'}>
-  ONE STOP SOLUTION FOR ALL EMECTRICAL NEED                        </Text>         
+  ONE STOP SOLUTION FOR ALL ELECTRICAL NEED                        </Text>         
                   <CustomButton href="/contact" border='none' content='CONTACT US' radius='0' width='180px' height='45px' size='14px' color='#bd0000' bgcolor='#fff'/>
 </HStack></Box>
 

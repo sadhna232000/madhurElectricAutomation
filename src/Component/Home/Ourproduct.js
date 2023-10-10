@@ -1,7 +1,7 @@
 import { Box, Center, Circle, Container, Divider, Grid, GridItem, IconButton, Img, Stack, Text, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Label, MedHeading } from "../../Common/Style";
-import product from "../../Assets/ourproduct.jpg"
+// import product from "../../Assets/ourproduct.jpg"
 import { ImPhone } from "react-icons/im";
 import { IoIosSpeedometer, IoIosSwitch } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";

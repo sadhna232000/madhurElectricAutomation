@@ -2,9 +2,20 @@ import React from "react";
 import sliderimg from '../../Assets/slider1.png'
 import { Box, Center, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import CustomButton from "../../Common/CustomButton";
-import { useNavigate } from "react-router-dom";
-const Slider = () => {
- 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import panel from "../../Assets/panel.jpg"
+const HomeSlider = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+    autoplaySpeed: 4000
+      };
     return (
         <>
             <Box position='relative'>
@@ -14,7 +25,9 @@ const Slider = () => {
      data-aos-duration="3000"
                     fontFamily='sans-serif'
                     textAlign={'center'}
-                    fontSize='18px' lineHeight={'30px'}>WE ARE BEST ELECTRIC SERVICE COMPANY</Text>
+               lineHeight={'30px'}
+                    
+                    >WE ARE BEST ELECTRIC SERVICE COMPANY</Text>
                 <Text color='#fff' 
                     fontFamily='sans-serif'
                     textAlign={'center'}
@@ -35,12 +48,22 @@ const Slider = () => {
                         </Stack></Center>
                 <Box bg={'#161617a6'} h='590px' w='100%' position='absolute' opacity='0.5'>
                 </Box>
-                <Img src={sliderimg} h='590px' w='100%' 
-                // objectPosition={'top'} objectFit={'cover'} 
-                />
+                <Slider {...settings}>
+               
+      <div><Img src={sliderimg} h='590px' w='100%' 
+              objectFit={'cover'} 
+                /></div>
+       {/* <div><Img src={panel} h='590px' w='100%' 
+              objectFit={'cover'} 
+                /></div>
+      <div><Img src={sliderimg} h='590px' w='100%' 
+              objectFit={'cover'} 
+                /></div> */}
+      </Slider>
+                
 
             </Box>
         </>
     )
 }
-export default Slider
+export default HomeSlider

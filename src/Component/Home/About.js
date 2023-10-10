@@ -3,7 +3,7 @@ import React from "react";
 import slider from '../../Assets/slider1.png'
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { MedHeading, Parcontent } from "../../Common/Style";
-import slider2 from '../../Assets/slider2.png'
+import MAINLTpanel from '../../Assets/MAINLTpanel.jpg'
 import Footer from "../../Common/Footer";
 const About = () => {
     return (
@@ -45,38 +45,37 @@ const About = () => {
                         <Parcontent py='20px'>
                         Madhur Electric Automation, Jaipur was established in the year 2011 
 as a sole proprietorship to manufacturers, suppliers and third party 
-service provider of all type of LT Panels, Transmissions Lines, Motor 
+service provider of all type of LT Panels, Motor 
 Control Centers, HT/LT Distribution Panel, Metering Panel, AMF Panel, 
-APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Contrac- 
-tors, DG Sets, Compound Lights, Consultancy and Liasoning. Under the 
+APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Projects, DG Sets, Consultancy and Liasoning. Under the 
 vigilance of "Mr. Vishnu Gour", the company has served its customers 
 competently.</Parcontent>
-<Parcontent pt='10px' pb='20px'>We work with a commitment to our customers and in getting the 
-things done in accordance to the requirements of clients, we have 
-always did smart work to achieve our customer’s satisfaction. Our 
-products are designed and developed in a complete technical environ- 
-ment and in presence of manufacturing experts and engineers. The 
-products offered by us are tested for quality at every stage of develop- 
-ment by the analysts of quality working with us. We select the raw 
-material required in manufacturing of our product as per suggested by 
-team of professionals as per the need. Our products are appreciated for 
-a wide range of features that they exhibit like quality, durability, func- 
-tionality, sustainability and easy operations.
-</Parcontent>
+                        <Parcontent pt='10px' pb='20px'>We work with a commitment to our customers and in getting the
+                            things done in accordance to the requirements of clients, we have
+                            always did smart work to achieve our customer’s satisfaction. Our
+                            products are designed and developed in a complete technical environ-
+                            ment and in presence of manufacturing experts and engineers. The
+                            products offered by us are tested for quality at every stage of develop-
+                            ment by the analysts of quality working with us. We select the raw
+                            material required in manufacturing of our product as per suggested by
+                            team of professionals as per the need. Our products are appreciated for
+                            a wide range of features that they exhibit like quality, durability, func-
+                            tionality, sustainability and easy operations.
+                        </Parcontent>
 
                     </GridItem>
-                    <GridItem  display="flex" justifyContent="end" alignItems="end" >
-                       
-                        <Img src={slider2} w='500px' 
-    height= '500px'
-    objectFit= 'cover'
-    objectPosition= 'center' />
-                        
+                    <GridItem display="flex" justifyContent="end" alignItems="end" >
+
+                        <Img src={MAINLTpanel} w='500px'
+                            height='500px'
+                            objectFit='cover'
+                            objectPosition='center' />
+
 
                     </GridItem>
                 </Grid>
             </Container>
-            <Footer/>
+            <Footer />
         </>
     )
 }

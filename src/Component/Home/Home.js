@@ -7,10 +7,11 @@ import Seprator from "./Seprator";
 import CompanyAbout from "./CompanyAbout";
 import Testimonial from "./Testimonial";
 import Location from "../../Common/Location";
+import HomeSlider from "./Slider";
 const Home =()=>{
     return(
         <>
-        <Slider/>
+        <HomeSlider/>
         <Ourproduct/>
         <Seprator/>
         <CompanyAbout/>
