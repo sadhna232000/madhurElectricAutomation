@@ -69,10 +69,20 @@ const Ourproduct = () => {
         autoplay: true, // Enable autoplay
     autoplaySpeed: 3000
       };
+      const settingsA = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000,
+    arrows: false, 
+      };
     return (
         <>
             {/* <Box  position='relative'> */}
-            <Container maxW='75%' m='auto' pt='80px' pb='0px'>
+            <Container maxW='75%' m='auto' pt='80px' pb='0px' className="remenu">
                 <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>BEST ELECTRICAL SERVICES</MedHeading>
                 {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
                 <Text
@@ -159,18 +169,103 @@ const Ourproduct = () => {
                     </Center>
       </div>
       
-      {/* Add more slides as needed */}
     </Slider>
     </Box>
-                {/* <Grid templateColumns='repeat(3, 1fr)' h='250px' gap='50px' py='3rem'   >
-                   
-                   
                 
-                   
-                </Grid> */}
             </Container>
-            {/* <Img src={product} h='590px' w='100%'/>
-             </Box> */}
+            <Box className="reslider">
+            <Container maxW='90%' m='auto' pt='30px' pb='0px' >
+                <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>BEST ELECTRICAL SERVICES</MedHeading>
+                {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
+                <Text
+                    color='#333333'
+                    fontFamily='sans-serif'
+                    textAlign={'center'}
+                    fontSize='1.4rem' fontWeight='600' 
+                    lineHeight='30px'>
+
+                    "Superior Electrical Services for Optimal Performance and Efficiency."
+                </Text>
+                <Box py='2rem'>
+                <Slider {...settingsA}>
+      <div>
+      <Center   h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/switch-yards")}
+      onMouseLeave={handleMouseLeave}  backgroundColor={isHovered ? '#bd0000' : 'rgb(226 229 236)' }   
+                    >
+                        <VStack textAlign='center' gap='10px' px='10px'>
+                                <IoIosSwitch color={isHovered ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Switch Yards</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>They play a crucial role in transmitting, distributing, and controlling electrical power. </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isHovered ?  '#fff':'#bd0000' } color={isHovered ?'#bd0000':  '#fff'}>
+                                <BsArrowRight fontSize='25px' />
+                            </Circle>
+                        </VStack>
+                    </Center>
+      </div>
+      <div>
+      <Center    h='250px' m='auto'  onMouseEnter={handleEnter} onClick={()=>navigate("/metering-panel")}
+      onMouseLeave={handleLeave}  backgroundColor={isMouse ? '#bd0000' : 'rgb(226 229 236)' }   
+                    >
+                        <VStack textAlign='center' gap='10px' px='10px'>
+                                <IoIosSpeedometer color={isMouse ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouse ? '#fff !important' : '#333333'}>Metering panel</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouse ? '#fff !important' :' #808080'}>  an electrical enclosure  that houses various electrical meters equipment</Label>
+                            <Circle cursor='pointer'  size='45px' bg={isMouse ?  '#fff':'#bd0000' } color={isMouse ?'#bd0000':  '#fff'}>
+                                <BsArrowRight fontSize='25px' />
+                            </Circle>
+                        </VStack>
+                    </Center>
+      </div>
+      <div>
+      <Center  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/cabel-earthling")}
+      onMouseLeave={mouseLeave}  backgroundColor={isMouseHover ? '#bd0000' : 'rgb(226 229 236)' }   
+                    >
+                        <VStack textAlign='center' gap='5px' px='10px'>
+                                <RiWirelessChargingFill color={isMouseHover ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>Cable Earthling</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>The primary purposes of cable earthing are stablitiy, safety and Equipment Protection </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isMouseHover ?  '#fff':'#bd0000' } color={isMouseHover ?'#bd0000':  '#fff'}>
+                                <BsArrowRight fontSize='25px' />
+                            </Circle>
+                        </VStack>
+                    </Center>
+      </div>
+     
+   
+      <div>
+      <Center   h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/industrial-panels")}
+      onMouseLeave={handleBlue}  backgroundColor={isHoverBlue ? '#bd0000' : 'rgb(226 229 236)' }   
+                    >
+                        <VStack textAlign='center' gap='11px' px='10px'>
+                                <RiBuildingFill color={isHoverBlue ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>Industrial Panel</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}> These panels are designed to provide protection, organization,</Label>
+                            <Circle cursor='pointer' size='45px' bg={isHoverBlue ?  '#fff':'#bd0000' } color={isHoverBlue ?'#bd0000':  '#fff'}>
+                                <BsArrowRight fontSize='25px' />
+                            </Circle>
+                        </VStack>
+                    </Center>
+      </div>
+      <div>
+      <Center  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/transformers")}
+      onMouseLeave={handleGreen}  backgroundColor={isHoverGreen ? '#bd0000' : 'rgb(226 229 236)' }   
+                    >
+                        <VStack textAlign='center' gap='10px' px='10px'>
+                                <GiElectric color={isHoverGreen ? '#fff' : '#bd0000'} fontSize={'35px'} />
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Transformers</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>It operates on the principle that a changing magnetic field in one coil of wire </Label>
+                            <Circle cursor='pointer'  size='45px' bg={isHoverGreen ?  '#fff':'#bd0000' } color={isHoverGreen ?'#bd0000':  '#fff'}>
+                                <BsArrowRight fontSize='25px' />
+                            </Circle>
+                        </VStack>
+                    </Center>
+      </div>
+      
+    </Slider>
+    </Box>
+                
+            </Container>
+            </Box>
         </>
     )
 }

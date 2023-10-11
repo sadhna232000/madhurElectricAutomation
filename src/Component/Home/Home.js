@@ -14,10 +14,10 @@ const Home =()=>{
         <HomeSlider/>
         <Ourproduct/>
         <Seprator/>
-        <CompanyAbout/>
-        <Testimonial/>
-       <Location/>
-        <Footer/>
+      <CompanyAbout/>
+         <Testimonial/>
+       <Location />
+         <Footer/>
         
         {/* <About/> */}
         </>

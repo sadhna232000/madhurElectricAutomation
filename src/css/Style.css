@@ -43,67 +43,8 @@
   cursor: pointer;
 }
 
-.navbar {
-  background-color: blue;
-  color: white;
-  /* padding: 10px; */
-}
 
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 20px;
-}
 
-.nav-item {
-  display: inline-block;
-  /* margin-right: 20px; */
-}
-
-.nav-item a {
-  /* color: white; */
-  text-decoration: none;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  content: '▼';
-  margin-left: 5px;
-}
-
-.dropdown-menu {
-  display: none;
-  border: 0.01px solid #8080802e;
-  position: absolute;
-  background-color: #fff;
-  list-style: none;
-  padding: 0;
-  z-index: 9999;
-  width: 1000px;
-  transform: translateX(-50%);
-}
-
-.dropdown-item {
-  margin: 0;
-}
-
-.dropdown-item a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-}
-
-.dropdown-item a:hover {
-  background-color: #555;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
 
 .divider {
   height: 1px;
@@ -130,6 +71,25 @@
   font-weight: bold;
 
 }
+.prevS.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -14%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 49px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: bold;
+
+}
 
 .next.arrow {
   font-size: 21px;
@@ -149,6 +109,24 @@
   font-weight: bold;
   border-radius: 50px;
 }
+.nextG.arrow{
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -14%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 0;
+  font-weight: bold;
+  border-radius: 50px;
+}
 
 .drop {
   background: #f8f8f8;
@@ -157,17 +135,11 @@
   font-weight: 500;
   text-decoration: none !important;
   cursor: pointer;
-  padding: 11px 15px;
+  padding: 11px 5px;
   font-size: 17px;
   font-family: sans-serif;
   letter-spacing: 1px;
 }
-
-/* .drop:hover {
-  background-color: #bd0000;
-  color: #fff;
-} */
-
 .actdive {
   background-color: #bd0000;
   color: #fff;
@@ -175,7 +147,7 @@
   font-weight: 500;
   text-decoration: none !important;
   cursor: pointer;
-  padding: 11px 15px;
+  padding: 11px 5px;
   font-size: 17px;
   font-family: sans-serif;
   letter-spacing: 1px;
@@ -186,7 +158,7 @@
   font-weight: 500;
   text-decoration: none !important;
   font-size: 17px;
-  padding: 11px 15px;
+  padding: 11px 5px;
 
   font-family: sans-serif;
   color: #111111;
@@ -194,7 +166,70 @@
   letter-spacing: 1px;
 }
 
-/* .drop:hover .act-lik {
-  background-color: #bd0000 !important;
-  color: #fff !important;
-} */
+/*mobile view*/
+.mbact{
+  padding: 7px 15px !important;
+  background: #bd0000;
+width: 100%;
+color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: system-ui;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.mbnav{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 15px !important;
+  font-family: system-ui;
+  text-decoration: none !important;
+  cursor: pointer;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  /* Your styles here */
+  .remenu,
+  .respnev1{
+    display: none !important;
+  }
+  .reslider{
+    display: block !important;
+  }
+ .reflex{
+  display: flex !important;
+ }
+  /* .respnev2{
+    display: block !important;
+  } */
+}
+
+/* CSS for screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your styles here */
+  .reslider,
+  .reflex,
+  .respnev2{
+    display: none !important;
+  }
+  .respnev1,
+   .remenu{
+display: block  !important;
+  }
+}
+
+/* CSS for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  /* Your styles here */
+  .reslider,
+  .reflex,
+  .respnev2{
+    display: none !important;
+  }
+ 
+   .respnev1,
+  .remenu{
+    display: block  !important;
+      }
+}

@@ -37,6 +37,7 @@ import Amfpanels from './Component/Product/Amfpanels';
 import ElectricalSubStations from './Component/Product/ElectricalSubStations';
 import Electricpanel from './Component/Product/Electricpanel';
 import Distribution from './Component/Product/Distribution';
+import SolarPanel from './Component/Product/SolarPanel';
 // ..
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
     <Route path="/amf-panels" element={<Amfpanels />} />
     <Route path="/breakers" element={<Product />} />
     <Route path="/HT-LT-distribution-panel" element={<Distribution />} />
+    <Route path="/solar-panel" element={<SolarPanel />} />
    
   </Routes>
 </Router>

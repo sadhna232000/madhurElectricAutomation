@@ -44,6 +44,9 @@ const Sidebar =()=>{
                       <Box className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'} href='/breakers'> Breakers</Link> 
                       </Box> 
+                      <Box className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'} href='/solar-panel'> SolarPanel</Link> 
+                      </Box> 
        
         
         <Box className={window.location.pathname === '/industrial-panels' ? 'actdive' : 'drop'}>
@@ -61,7 +64,7 @@ const Sidebar =()=>{
                     <Link  className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'} href='/electrical-installation'>Electrical Installation Services</Link> 
                       </Box>
         <Box className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'} href='/electrical-analytes'> Electrical Drivesquality Analytes</Link> 
+                    <Link  className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'} href='/electrical-analytes'> Electrical Drive Equality</Link> 
                       </Box>
 
        

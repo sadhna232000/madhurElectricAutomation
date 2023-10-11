@@ -1,16 +1,17 @@
 
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
+import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
 import junction from "../../Assets/juction-box.png"
+import { FaCheck } from "react-icons/fa";
 const Switchyards =()=>{
     return(
         <>
-          <Breadcrumbs name='SWITCH YARDS' home='Home' page='Switch-Yards' />
-            <Container maxW='75%' m='auto' py='40px'>
+          <Breadcrumbs name='EARTHING' home='Home' page='Earthing' />
+            <Container maxW='75%' m='auto' py='40px' className="remenu">
 
                 <Grid
                     //   h='200px'
@@ -21,20 +22,65 @@ const Switchyards =()=>{
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={junction} h='325px' />
+                            {/* <Img src={junction} h='325px' /> */}
 
-                            <MedHeading pb='10px' pt='20px'>JUCTION BOX</MedHeading>
+                            <MedHeading pb='10px' pt='20px'>EARTHING</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                                We are Leading Supplied of all types of Enclosure and Junction Box in Reputed Make Like: Hensel.</Parcontent>
+                            Earthing, also known as grounding in some regions, is a critical electrical safety practice used to protect people, equipment, and structures from electrical faults and lightning strikes. It involves creating a low-resistance electrical path between electrical equipment, systems, or structures and the Earth's surface. </Parcontent>                           
                             <Parcontent>
-                                We are offering high quality electrical enclosures and junction boxes. These junction boxes are manufactured from top quality materials thus providing maximum satisfaction to our clients.</Parcontent>
+                            Proper earthing provides several essential functions:                            </Parcontent>
+                            <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Electrical Safety</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Equipment Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Static Charge Dissipation</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Lightning Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>EMI and EMC</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Ground Electrode</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding Conductor</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding System Design</Text></HStack></GridItem>
+                               
+                            </Grid>
+                        </Stack>
+                    </GridItem>
+                    <GridItem colSpan={2}>
+                        <Sidebar />
+
+                    </GridItem>
+
+                </Grid>
+            </Container>
+            <Container maxW='90%' m='auto' py='40px' className="reslider">
+
+                <Grid
+                    //   h='200px'
+                    // W='100%'
+                    //   templateRows='repeat(2, 1fr)'
+                    templateColumns='repeat(1, 1fr)'
+                    // columnGap={30}
+                >
+                    <GridItem colSpan={4}>
+                        <Stack>
+                            {/* <Img src={junction} h='325px' /> */}
+
+                            <MedHeading pb='10px' pt='20px'>EARTHING</MedHeading>
+                            <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
+
                             <Parcontent>
-                                Further, our range of enclosures provides many choices for enclosing electrical and electronics equipment operating in hostile, harsh and demanding environments of industrial plants, unprotected out door areas, marine engineering applications and the areas with increased safety. We offer these enclosures and junction boxes at most competitive prices.
-                            </Parcontent>
-                            <Grid templateColumns='repeat(6, 1fr)'>
-                                <GridItem></GridItem>
+                            Earthing, also known as grounding in some regions, is a critical electrical safety practice used to protect people, equipment, and structures from electrical faults and lightning strikes. It involves creating a low-resistance electrical path between electrical equipment, systems, or structures and the Earth's surface. </Parcontent>                           
+                            <Parcontent>
+                            Proper earthing provides several essential functions:                            </Parcontent>
+                            <Grid templateColumns='repeat(1, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Electrical Safety</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Equipment Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Static Charge Dissipation</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Lightning Protection</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>EMI and EMC</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Ground Electrode</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding Conductor</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding System Design</Text></HStack></GridItem>
+                               
                             </Grid>
                         </Stack>
                     </GridItem>

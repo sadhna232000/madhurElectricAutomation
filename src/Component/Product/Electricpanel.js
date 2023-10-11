@@ -14,7 +14,7 @@ const Electricpanel =()=>{
     return(
         <>
          <Breadcrumbs name='MAIN LT PANELS' home='Home' page='Main LT Panels' />
-            <Container maxW='75%' m='auto' py='40px'>
+            <Container maxW='75%' m='auto' py='40px' className="remenu">
 
                 <Grid
                     //   h='200px'
@@ -65,6 +65,64 @@ const Electricpanel =()=>{
                         </Stack>
                     </GridItem>
                     <GridItem colSpan={2}>
+                        <Sidebar />
+
+                    </GridItem>
+
+                </Grid>
+            </Container>
+            {/* mobile view */}
+            <Container maxW='90%' m='auto' py='40px' className="reslider">
+
+                <Grid
+                    //   h='200px'
+                    // W='100%'
+                    //   templateRows='repeat(2, 1fr)'
+                    templateColumns='repeat(1, 1fr)'
+                    // columnGap={30}
+                >
+                    <GridItem >
+                        <Stack>
+                            <Img src={electric}  w='100%' />
+
+                            <MedHeading pb='10px' pt='20px'>Main LT Panel</MedHeading>
+                            <Divider orientation='horizontal' border='1.5px solid #bd0000'  w='80px'/>
+
+                            <Parcontent>
+                            An electrical panel, also known as a circuit breaker panel or distribution board, is a crucial component of an electrical system in a building. It serves as the central hub that distributes electrical power to various circuits throughout the structure while also providing protection against overloads and electrical faults.
+                            </Parcontent>                            <Parcontent>
+                            Here's an explanation of its key components and functions:-</Parcontent>
+                           
+                            <Grid templateColumns='repeat(1, 1fr)' gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Main Service Disconnect</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Circuit Breakers</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Branch Circuits</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Neutral Bus Bar</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding Bus Bar</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Hot Bus Bars</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Labels and Markings</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Panel Cover</Text></HStack></GridItem>
+                               
+                            </Grid>
+                            <Grid  templateColumns='repeat(1, 1fr)' gap={'40px'} py='20px'>
+                                  <GridItem>
+<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
+    <Box w='230px'  m='auto'><Img src={electric_6} w='230px'/></Box>
+</Box>
+
+
+                                  </GridItem>
+                                  <GridItem>
+<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
+<Box w='230px'  m='auto'> <Img src={electric_5} w='230px' h='180px' objectFit='cover'/></Box>
+</Box>
+
+
+                                  </GridItem>
+                            </Grid>
+                        </Stack>
+                    </GridItem>
+                    <GridItem >
                         <Sidebar />
 
                     </GridItem>
