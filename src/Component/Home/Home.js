@@ -8,6 +8,7 @@ import CompanyAbout from "./CompanyAbout";
 import Testimonial from "./Testimonial";
 import Location from "../../Common/Location";
 import HomeSlider from "./Slider";
+import Project from "./Project";
 const Home =()=>{
     return(
         <>
@@ -16,6 +17,7 @@ const Home =()=>{
         <Seprator/>
       <CompanyAbout/>
          <Testimonial/>
+         <Project/>
        <Location />
          <Footer/>
         

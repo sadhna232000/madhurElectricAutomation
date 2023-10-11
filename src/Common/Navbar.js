@@ -315,6 +315,7 @@ function Navbar() {
 
                </Collapse>
                </Menu>
+              <Link className={window.location.pathname === '/clients' ? 'mbact' : 'mbnav'} href='/clients'> Our Clients</Link>
               <Link className={window.location.pathname === '/contact' ? 'mbact' : 'mbnav'} href='/contact'> Contact</Link>
          
         </VStack>
@@ -583,6 +584,9 @@ function Navbar() {
 
                 </MenuList>
               </Menu>
+              <Box className={window.location.pathname === '/clients' ? 'act' : 'nav'}>
+                <Link className={window.location.pathname === '/clients' ? 'active' : 'nav'} href='/clients'> Our Clients</Link>
+              </Box>
               <Box className={window.location.pathname === '/contact' ? 'act' : 'nav'}>
                 <Link className={window.location.pathname === '/contact' ? 'active' : 'nav'} href='/contact'> Contact</Link>
               </Box>

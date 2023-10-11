@@ -38,6 +38,7 @@ import ElectricalSubStations from './Component/Product/ElectricalSubStations';
 import Electricpanel from './Component/Product/Electricpanel';
 import Distribution from './Component/Product/Distribution';
 import SolarPanel from './Component/Product/SolarPanel';
+import Clients from './Component/Clients/Clients';
 // ..
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
     <Route path="/breakers" element={<Product />} />
     <Route path="/HT-LT-distribution-panel" element={<Distribution />} />
     <Route path="/solar-panel" element={<SolarPanel />} />
+    <Route path="/clients" element={<Clients />} />
    
   </Routes>
 </Router>
