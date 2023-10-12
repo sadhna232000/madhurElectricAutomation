@@ -34,30 +34,30 @@ const Footer = () => {
                                         <Label href="/motor-controls">
                                             Motor Controls Panels
                                         </Label>
-                                        <Label href="/industrial-panels">
+                                        <Label href="/load-managements">
                                             Load Management Panels
                                         </Label>
-                                        <Label href="metering-panel">
+                                        <Label href="/metering-panel">
                                             Metering Panels
                                         </Label>
                                         <Label href="/amf-panels">
                                             AMF Panels
                                         </Label>
-                                        {/* <Label href="/cabel-earthling">
+                                        {/* <Label href="/cabling">
                                             Cabling
                                         </Label> */}
                                     </SimpleGrid>
                                     <SimpleGrid columns={1} spacing={5} py='20px' >
-                                        <Label href="/APFC-panel">
+                                        <Label href="/VFD-panel">
                                             VFD Panels
                                         </Label>
                                         <Label href="/electrical-installation">
                                             Electrical Installation Services
                                         </Label>
-                                        <Label href="/electrical-analytes">
+                                        <Label href="/electrical-quality">
                                             Electrical Drive Quality
                                         </Label>
-                                        <Label href="/switch-yards">
+                                        <Label href="/earthing">
                                             Earthing
                                         </Label>
                                         <Label href="/breakers">
@@ -66,7 +66,7 @@ const Footer = () => {
                                         {/* <Label href="/transformers">
                                 Transformers
                                 </Label> */}
-                                        {/* <Label href="/DG-sets">
+                                        {/* <Label href="/dg-synchronizing">
                                             DG Synchronizing Panel
                                         </Label> */}
                                     </SimpleGrid>
@@ -85,8 +85,11 @@ const Footer = () => {
                                     <Label href="/about">
                                         About
                                     </Label>
-                                    <Label href="/DG-sets">
-                                        Products
+                                    <Label href="/dg-synchronizing">
+                                        Service Range
+                                    </Label>
+                                    <Label href="/client">
+                                        Our Client
                                     </Label>
                                     <Label href="/contact">
                                         Contact
@@ -134,7 +137,7 @@ const Footer = () => {
                                     <Label href="/motor-controls">
                                         Motor Controls Panels
                                     </Label>
-                                    <Label href="/industrial-panels">
+                                    <Label href="/load-managements">
                                         Load Management Panels
                                     </Label>
                                     <Label href="metering-panel">
@@ -143,24 +146,24 @@ const Footer = () => {
                                     <Label href="/amf-panels">
                                         AMF Panels
                                     </Label>
-                                    <Label href="/cabel-earthling">
+                                    <Label href="/cabling">
                                         Cabling
                                     </Label>
                                 </SimpleGrid>
                                 <SimpleGrid columns={1} spacing={5} py='20px' >
-                                    <Label href="/APFC-panel">
+                                    <Label href="/VFD-panel">
                                         VFD Panels
                                     </Label>
                                     <Label href="/electrical-installation">
                                         Electrical Installation Services
                                     </Label>
-                                    <Label href="/electrical-analytes">
+                                    <Label href="/electrical-quality">
                                         Electrical Drive Quality
                                     </Label>
                                     {/* <Label href="/transmission-lines">
                                     Transmission Lines
                                 </Label> */}
-                                    <Label href="/switch-yards">
+                                    <Label href="/earthing">
                                         Earthing
                                     </Label>
                                     <Label href="/breakers">
@@ -169,7 +172,7 @@ const Footer = () => {
                                     {/* <Label href="/transformers">
                                 Transformers
                                 </Label> */}
-                                    <Label href="/DG-sets">
+                                    <Label href="/dg-synchronizing">
                                         DG Synchronizing Panel
                                     </Label>
                                 </SimpleGrid>
@@ -188,8 +191,11 @@ const Footer = () => {
                                     <Label href="/about">
                                         About
                                     </Label>
-                                    <Label href="/DG-sets">
-                                        Products
+                                    <Label href="/dg-synchronizing">
+                                        Service Range
+                                    </Label>
+                                    <Label href="/client">
+                                        Our Client
                                     </Label>
                                     <Label href="/contact">
                                         Contact

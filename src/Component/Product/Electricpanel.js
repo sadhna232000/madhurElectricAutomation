@@ -10,18 +10,18 @@ import electric_6 from "../../Assets/electric_6.jpg"
 import { CgCheck } from "react-icons/cg";
 import { FaCheck } from "react-icons/fa";
 
-const Electricpanel =()=>{
-    return(
+const Electricpanel = () => {
+    return (
         <>
-         <Breadcrumbs name='MAIN LT PANELS' home='Home' page='Main LT Panels' />
-            <Container maxW='75%' m='auto' py='40px' className="remenu">
+            <Breadcrumbs name='MAIN LT PANELS' home='Home' page='Main LT Panels' />
+            <Container maxW={{ base: '100%', sm: '100%', md: '100%', lg: '75%', xl: '75%', '2xl': '75%' }} m='auto' py='40px' >
 
                 <Grid
                     //   h='200px'
                     // W='100%'
                     //   templateRows='repeat(2, 1fr)'
-                    templateColumns='repeat(6, 1fr)'
-                    columnGap={30}
+                    templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(1, 1fr)', md: 'repeat(1, 1fr)', lg: 'repeat(6, 1fr)', xl: 'repeat(6, 1fr)', '2xl': 'repeat(6, 1fr)' }}
+                    columnGap={{ base: '0', sm: '0', md: '0', lg: '30', xl: '30', '2xl': '30' }}
                 >
                     <GridItem colSpan={4}>
                         <Stack>
@@ -31,36 +31,38 @@ const Electricpanel =()=>{
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
 
                             <Parcontent>
-                            An electrical panel, also known as a circuit breaker panel or distribution board, is a crucial component of an electrical system in a building. It serves as the central hub that distributes electrical power to various circuits throughout the structure while also providing protection against overloads and electrical faults.
+                                An electrical panel, also known as a circuit breaker panel or distribution board, is a crucial component of an electrical system in a building. It serves as the central hub that distributes electrical power to various circuits throughout the structure while also providing protection against overloads and electrical faults.
                             </Parcontent>                            <Parcontent>
-                            Here's an explanation of its key components and functions:-</Parcontent>
-                           
-                            <Grid templateColumns='repeat(2, 1fr)' gap={'20px'} py='20px'>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Main Service Disconnect</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Circuit Breakers</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Branch Circuits</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Neutral Bus Bar</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding Bus Bar</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Hot Bus Bars</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Labels and Markings</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Panel Cover</Text></HStack></GridItem>
-                               
+                                Here's an explanation of its key components and functions:-</Parcontent>
+
+                            <Grid templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(2, 1fr)', '2xl': 'repeat(2, 1fr)' }}
+                                gap={'20px'} py='20px'>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Main Service Disconnect</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Circuit Breakers</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Branch Circuits</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Neutral Bus Bar</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Grounding Bus Bar</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Hot Bus Bars</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Labels and Markings</Text></HStack></GridItem>
+                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000' /><Text>Panel Cover</Text></HStack></GridItem>
+
                             </Grid>
-                            <Grid  templateColumns='repeat(2, 1fr)' gap={'40px'} py='20px'>
-                                  <GridItem>
-<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-    <Box w='230px'  m='auto'><Img src={electric_6} w='230px'/></Box>
-</Box>
+                            <Grid templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(2, 1fr)', '2xl': 'repeat(2, 1fr)' }}
+                                gap={'40px'} py='20px'>
+                                <GridItem>
+                                    <Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{ border: '2px solid #bd0000' }} borderRadius='30px' py='40px' px='0'>
+                                        <Box w='230px' m='auto'><Img src={electric_6} w='230px' /></Box>
+                                    </Box>
 
 
-                                  </GridItem>
-                                  <GridItem>
-<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-<Box w='230px'  m='auto'> <Img src={electric_5} w='230px' h='180px' objectFit='cover'/></Box>
-</Box>
+                                </GridItem>
+                                <GridItem>
+                                    <Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{ border: '2px solid #bd0000' }} borderRadius='30px' py='40px' px='0'>
+                                        <Box w='230px' m='auto'> <Img src={electric_5} w='230px' h='180px' objectFit='cover' /></Box>
+                                    </Box>
 
 
-                                  </GridItem>
+                                </GridItem>
                             </Grid>
                         </Stack>
                     </GridItem>
@@ -71,67 +73,10 @@ const Electricpanel =()=>{
 
                 </Grid>
             </Container>
-            {/* mobile view */}
-            <Container maxW='90%' m='auto' py='40px' className="reslider">
-
-                <Grid
-                    //   h='200px'
-                    // W='100%'
-                    //   templateRows='repeat(2, 1fr)'
-                    templateColumns='repeat(1, 1fr)'
-                    // columnGap={30}
-                >
-                    <GridItem >
-                        <Stack>
-                            <Img src={electric}  w='100%' />
-
-                            <MedHeading pb='10px' pt='20px'>Main LT Panel</MedHeading>
-                            <Divider orientation='horizontal' border='1.5px solid #bd0000'  w='80px'/>
-
-                            <Parcontent>
-                            An electrical panel, also known as a circuit breaker panel or distribution board, is a crucial component of an electrical system in a building. It serves as the central hub that distributes electrical power to various circuits throughout the structure while also providing protection against overloads and electrical faults.
-                            </Parcontent>                            <Parcontent>
-                            Here's an explanation of its key components and functions:-</Parcontent>
-                           
-                            <Grid templateColumns='repeat(1, 1fr)' gap={'20px'} py='20px'>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Main Service Disconnect</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Circuit Breakers</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Branch Circuits</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Neutral Bus Bar</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Grounding Bus Bar</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Hot Bus Bars</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Labels and Markings</Text></HStack></GridItem>
-                                <GridItem><HStack><FaCheck fontSize='12px' color='#bd0000'/><Text>Panel Cover</Text></HStack></GridItem>
-                               
-                            </Grid>
-                            <Grid  templateColumns='repeat(1, 1fr)' gap={'40px'} py='20px'>
-                                  <GridItem>
-<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-    <Box w='230px'  m='auto'><Img src={electric_6} w='230px'/></Box>
-</Box>
-
-
-                                  </GridItem>
-                                  <GridItem>
-<Box bg='#F7F8FA' border='2px solid #ffb9b9' _hover={{border:'2px solid #bd0000'}} borderRadius='30px' py='40px' px='0'>
-<Box w='230px'  m='auto'> <Img src={electric_5} w='230px' h='180px' objectFit='cover'/></Box>
-</Box>
-
-
-                                  </GridItem>
-                            </Grid>
-                        </Stack>
-                    </GridItem>
-                    <GridItem >
-                        <Sidebar />
-
-                    </GridItem>
-
-                </Grid>
-            </Container>
+       
             <Footer />
-        
-        
+
+
         </>
     )
 }

@@ -37,7 +37,7 @@ const SubNavbar=()=>{
 <VStack>
     {/* <HStack gap='30px'> */}
         <Box ><HStack ><ImPhone color="#fff" fontSize={'15px'}/> <Content >+91 80057 75964 , +91 94140 46267</Content></HStack></Box>
-   <Box><HStack><AiFillMail color="#fff" fontSize={'15px'}/> <Content>madhurelectric@gmail.com</Content></HStack></Box>
+   <Link textDecoration='none' href={`mailto:${email}`}><HStack><AiFillMail color="#fff" fontSize={'15px'}/> <Content>madhurelectric@gmail.com</Content></HStack></Link>
     {/* </HStack>  */}
     <HStack gap='15px'>
         <SocialIcon  target="_blank" url="https://facebook.com"  style={{ width:'30px' , height:'30px' }} />

@@ -57,7 +57,8 @@ competently.
                     <GridItem display="flex" justifyContent="center" alignItems="end" position='relative'>
                         <Img src={electric} width='100%'
                             objectFit='cover'
-                            height='270px'  objectPosition='left'/>
+                            // height='270px'  
+                            objectPosition='left'/>
                         {/* <Img src={electric} width='50%'
                             left='0px'
                             bottom='-60px'

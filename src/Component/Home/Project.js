@@ -15,8 +15,8 @@ const Project=()=>{
 
     return(
         <>
-        <Container position='relative' maxW='75%' m='auto' pb='60px'  className="remenu">
-        <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>Gallery Section</MedHeading>
+        <Container  maxW={{base:'100%',sm:'100%',md:'100%',lg:'75%',xl:'75%','2xl':'75%'}} m='auto' pb='60px' >
+        <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>GALLERY</MedHeading>
 
         <Text
                     color='#333333'
@@ -26,7 +26,7 @@ const Project=()=>{
                    
                     pb='20px'
                     lineHeight='20px'>
-                 Our Project
+                 OUR PROJECTS
                 </Text>
                 <Divider orientation='horizontal' m='auto'  border='1.5px solid #bd0000' width='100px' />                {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
 
@@ -34,19 +34,20 @@ const Project=()=>{
 //   h='400px'
   pt='50px'
 //   templateRows='repeat(2, 1fr)'
-  templateColumns='repeat(4, 1fr)'
+templateColumns={{base:'repeat(1, 1fr)',sm:'repeat(1, 1fr)',md:'repeat(2, 1fr)',lg:'repeat(4, 1fr)',xl:'repeat(4, 1fr)','2xl':'repeat(4, 1fr)' }}
+
   gap={3}
 >
-<GridItem    ><Img src={electric_1} w='270px' h='250px'/></GridItem>
-<GridItem><Img src={Electricalpanel} w='270px' h='250px' /></GridItem>
+<GridItem    ><Img src={electric_1} w='100%' h='250px'/></GridItem>
+<GridItem><Img src={Electricalpanel} w='100%' h='250px' /></GridItem>
 
-  <GridItem    ><Img src={cabelpanel} w='270px' h='250px' /></GridItem>
-  <GridItem    ><Img src={lightpanel} w='270px' h='250px' /></GridItem>
+  <GridItem    ><Img src={cabelpanel} w='100%' h='250px' /></GridItem>
+  <GridItem    ><Img src={lightpanel} w='100%' h='250px' /></GridItem>
   
-  <GridItem    ><Img src={electric_5} w='270px' h='250px' /></GridItem>
-  <GridItem    ><Img src={electric_6} w='270px' h='250px' /></GridItem>
-  <GridItem    ><Img src={electric_8} w='270px' h='250px' /></GridItem>
-  <GridItem    ><Img src={electric_2} w='270px' h='250px' /></GridItem>
+  <GridItem    ><Img src={electric_5} w='100%' h='250px' /></GridItem>
+  <GridItem    ><Img src={electric_6} w='100%' h='250px' /></GridItem>
+  <GridItem    ><Img src={electric_8} w='100%' h='250px' /></GridItem>
+  <GridItem    ><Img src={electric_2} w='100%' h='250px' /></GridItem>
   
   
 </Grid>

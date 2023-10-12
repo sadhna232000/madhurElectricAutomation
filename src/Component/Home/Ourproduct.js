@@ -147,7 +147,7 @@ const Ourproduct = () => {
      
    
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/APFC-panel")}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/VFD-panel")}
       onMouseLeave={handleBlue}  backgroundColor={isHoverBlue ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='11px' px='40px'>
@@ -229,7 +229,7 @@ const Ourproduct = () => {
                     </Center>
       </div>
       <div>
-      <Center  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/APFC-panel")}
+      <Center  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/VFD-panel")}
       onMouseLeave={mouseLeave}  backgroundColor={isMouseHover ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='5px' px='10px'>

@@ -5,9 +5,10 @@
   padding: 0;
   margin: 0;
 }
-/* .css-1m7tg19::before{
-  paddin: 0 !important;
-} */
+.css-1m7tg19::before {
+    padding-bottom: 25.25% !important;
+}
+
 .act {
   background: #bd0000;
   border-radius: 50px !important;

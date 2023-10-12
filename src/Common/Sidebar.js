@@ -12,8 +12,8 @@ const Sidebar =()=>{
                       <Box className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'} href='/motor-controls'> Motor Controls Panels</Link> 
                       </Box>
-                      <Box className={window.location.pathname === '/DG-sets' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/DG-sets' ? 'actdive' : 'drop'} href='/DG-sets'> DG Synchronizing Panel</Link> 
+                      <Box className={window.location.pathname === '/dg-synchronizing' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/dg-synchronizing' ? 'actdive' : 'drop'} href='/dg-synchronizing'> DG Synchronizing Panel</Link> 
                       </Box>
                       {/* <Box className={window.location.pathname === '/HT-LT-distribution-panel' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/HT-LT-distribution-panel' ? 'actdive' : 'drop'} href='/HT-LT-distribution-panel'>HT/LT Distribution Panel</Link> 
@@ -25,8 +25,8 @@ const Sidebar =()=>{
                       <Box className={window.location.pathname === '/amf-panels' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/amf-panels' ? 'actdive' : 'act-lik'} href='/amf-panels'> AMF Panels</Link> 
                       </Box>
-                      <Box className={window.location.pathname === '/APFC-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/APFC-panel' ? 'actdive' : 'drop'} href='/APFC-panel'> VFD Panels</Link> 
+                      <Box className={window.location.pathname === '/VFD-panel' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/VFD-panel' ? 'actdive' : 'drop'} href='/VFD-panel'> VFD Panels</Link> 
                       </Box>
      
                       {/* <Box className={window.location.pathname === '/transmission-lines' ? 'actdive' : 'drop'}>
@@ -35,11 +35,11 @@ const Sidebar =()=>{
         {/* <Box className={window.location.pathname === '/transformers' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/transformers' ? 'actdive' : 'drop'} href='/transformers'> Transformers</Link> 
                       </Box>*/}
-                        <Box className={window.location.pathname === '/cabel-earthling' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/cabel-earthling' ? 'actdive' : 'drop'} href='/cabel-earthling'> Cabling </Link> 
+                        <Box className={window.location.pathname === '/cabling' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/cabling' ? 'actdive' : 'drop'} href='/cabling'> Cabling </Link> 
                       </Box>
-        <Box className={window.location.pathname === '/switch-yards' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/switch-yards' ? 'actdive' : 'drop'} href='/switch-yards'> Earthing</Link> 
+        <Box className={window.location.pathname === '/earthing' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/earthing' ? 'actdive' : 'drop'} href='/earthing'> Earthing</Link> 
                       </Box>
                       <Box className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'} href='/breakers'> Breakers</Link> 
@@ -49,8 +49,8 @@ const Sidebar =()=>{
                       </Box> 
        
         
-        <Box className={window.location.pathname === '/industrial-panels' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/industrial-panels' ? 'actdive' : 'drop'} href='/industrial-panels'>Load Management Panels</Link> 
+        <Box className={window.location.pathname === '/load-managements' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/load-managements' ? 'actdive' : 'drop'} href='/load-managements'>Load Management Panels</Link> 
                       </Box>
                      
                     
@@ -63,28 +63,15 @@ const Sidebar =()=>{
         <Box className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'} href='/electrical-installation'>Electrical Installation Services</Link> 
                       </Box>
-        <Box className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'} href='/electrical-analytes'> Electrical Drive Quality</Link> 
+        <Box className={window.location.pathname === '/electrical-quality' ? 'actdive' : 'drop'}>
+                    <Link  className={window.location.pathname === '/electrical-quality' ? 'actdive' : 'drop'} href='/electrical-quality'> Electrical Drive Quality</Link> 
                       </Box>
 
        
        
        
       
-   {/* <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel href="/home">Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel>
-   <Prolabel>Juction Box</Prolabel> */}
+   
     </Stack>
         </>
     )

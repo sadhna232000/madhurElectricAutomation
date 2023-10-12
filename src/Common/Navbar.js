@@ -29,25 +29,12 @@ import Logo from "../Assets/mdlogo.png"
 function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { isOpen: isOpen2, onToggle: onToggle2 } = useDisclosure();
-  // const [isMobile, setIsMobile] = useState(false);
-
-  // const handleResize = () => {
-  //   setIsMobile(window.innerWidth < 768); // Adjust the breakpoint as needed
-  // };
-
-  // // Add a resize event listener to check for changes in screen size
-  // React.useEffect(() => {
-  //   handleResize();
-  //   window.addEventListener('resize', handleResize);
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+ 
 
   return (
     <>
-      <Flex justifyContent='space-between' px='20px' className='reflex'  position="sticky" top="-1px" zIndex="9999999" bg='#fff' borderBottom='1px solid #80808038' boxShadow='rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
-          <Img src={Logo} h='65px' objectPosition={'center'} />
+      <HStack justifyContent='space-between' px='20px' className='reflex'  position="sticky" top="-1px" zIndex="9999999" bg='#fff' borderBottom='1px solid #80808038' boxShadow='rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
+         <Link href='/home'><Img src={Logo} h='65px' objectPosition={'center'} cursor='pointer' /></Link> 
           
           <IconButton
           fontSize= '30px'
@@ -57,11 +44,17 @@ function Navbar() {
             aria-label="Open Menu"
             size="lg"
             ml={'auto'}
-            icon={isOpen ? <VscThreeBars/> : <VscThreeBars/>}
+            icon={isOpen ? <VscThreeBars bg='none !important'/> : <VscThreeBars bg='none !important'/>}
             onClick={onToggle}
           />
-          </Flex>
-          <Collapse in={isOpen}>
+          </HStack>
+          <Collapse in={isOpen}   style={{
+                position: 'sticky',
+    top: '60px',
+    zIndex: '999999',
+    backgroundColor: '#fff',
+    boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+               }}>
         <VStack p={4} alignItems="start" spacing={4}>
               <Link className={window.location.pathname === '/home' ? 'mbact' : 'mbnav'}href='/home' >Home</Link>
               <Link className={window.location.pathname === '/about' ? 'mbact' : 'mbnav'} href='/about'> About</Link>
@@ -75,7 +68,14 @@ function Navbar() {
                   Service Range
                </MenuButton>
               
-               <Collapse in={isOpen2} >
+               <Collapse in={isOpen2} 
+             
+    //            position= 'sticky'
+    // top= '60px'
+    // z-index= '999999'
+    // backgroundColor= '#fff' 
+    // boxShadow='rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+     >
                <Grid templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={2} >
                    <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
@@ -136,7 +136,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/APFC-panel"> VFD Panels</Link>
+                        cursor='pointer' href="/VFD-panel"> VFD Panels</Link>
                     </MenuItem>
                     {/* <MenuItem bg='#fff !important' border='none !important'  p='5px 15px'borderBottom='1px dashed darkgray !important'> */}
 
@@ -161,7 +161,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/switch-yards"> Earthing</Link>
+                        cursor='pointer' href="/earthing"> Earthing</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
@@ -200,7 +200,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/industrial-panels">Load Management Panels</Link>
+                        cursor='pointer' href="/load-managements">Load Management Panels</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
@@ -214,7 +214,7 @@ function Navbar() {
                         color='#808080'
                         textDecoration='none !important'
                         cursor='pointer'
-                        href="/DG-sets"> DG Synchronizing Panel</Link>
+                        href="/dg-synchronizing"> DG Synchronizing Panel</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
@@ -228,7 +228,7 @@ function Navbar() {
                         color='#808080'
                         textDecoration='none !important'
                         cursor='pointer'
-                        href="/cabel-earthling">Cabling</Link>
+                        href="/cabling">Cabling</Link>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
@@ -293,7 +293,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/electrical-analytes">Electrical Drive Quality</Link>
+                        cursor='pointer' href="/electrical-quality">Electrical Drive Quality</Link>
                     </MenuItem>
 
 
@@ -312,8 +312,9 @@ function Navbar() {
 
 
                   </Grid>
-
+                 
                </Collapse>
+               
                </Menu>
               <Link className={window.location.pathname === '/clients' ? 'mbact' : 'mbnav'} href='/clients'> Our Clients</Link>
               <Link className={window.location.pathname === '/contact' ? 'mbact' : 'mbnav'} href='/contact'> Contact</Link>
@@ -325,7 +326,7 @@ function Navbar() {
    
     <Container maxW='75%' m='auto' className='remenu' >       
     <Flex alignItems="center" justifyContent={'space-between'}>       
-      <Img src={Logo} h='95px' objectPosition={'center'} />         
+    <Link href='/home'>  <Img src={Logo} h='95px' objectPosition={'center'} />    </Link>     
       <Spacer />
           <HStack gap='10px'>            
            <Box className={window.location.pathname === '/home' ? 'act' : 'nav'}>
@@ -401,7 +402,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/APFC-panel"> VFD Panels</Link>
+                        cursor='pointer' href="/VFD-panel"> VFD Panels</Link>
                     </MenuItem>
                     {/* <MenuItem bg='#fff !important' border='none !important'  p='5px'borderBottom='1px dashed darkgray !important'> */}
 
@@ -426,7 +427,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/switch-yards"> Earthing</Link>
+                        cursor='pointer' href="/earthing"> Earthing</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
@@ -465,7 +466,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/industrial-panels">Load Management Panels</Link>
+                        cursor='pointer' href="/load-managements">Load Management Panels</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
@@ -479,7 +480,7 @@ function Navbar() {
                         color='#808080'
                         textDecoration='none !important'
                         cursor='pointer'
-                        href="/DG-sets"> DG Synchronizing Panel</Link>
+                        href="/dg-synchronizing"> DG Synchronizing Panel</Link>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
@@ -493,7 +494,7 @@ function Navbar() {
                         color='#808080'
                         textDecoration='none !important'
                         cursor='pointer'
-                        href="/cabel-earthling">Cabling</Link>
+                        href="/cabling">Cabling</Link>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
@@ -558,7 +559,7 @@ function Navbar() {
                         fontFamily='sans-serif'
                         color='#808080'
                         textDecoration='none !important'
-                        cursor='pointer' href="/electrical-analytes">Electrical Drive Quality</Link>
+                        cursor='pointer' href="/electrical-quality">Electrical Drive Quality</Link>
                     </MenuItem>
 
 
