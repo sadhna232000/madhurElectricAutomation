@@ -5,12 +5,14 @@
   padding: 0;
   margin: 0;
 }
-
+/* .css-1m7tg19::before{
+  paddin: 0 !important;
+} */
 .act {
   background: #bd0000;
   border-radius: 50px !important;
   padding: 7px 15px !important;
-
+color: #fff !important;
 }
 
 .active {
@@ -71,6 +73,7 @@
   font-weight: bold;
 
 }
+
 .prevS.arrow {
   display: flex;
   justify-content: center;
@@ -109,7 +112,8 @@
   font-weight: bold;
   border-radius: 50px;
 }
-.nextG.arrow{
+
+.nextG.arrow {
   font-size: 17px;
   display: flex;
   justify-content: center;
@@ -140,6 +144,7 @@
   font-family: sans-serif;
   letter-spacing: 1px;
 }
+
 .actdive {
   background-color: #bd0000;
   color: #fff;
@@ -167,18 +172,19 @@
 }
 
 /*mobile view*/
-.mbact{
+.mbact {
   padding: 7px 15px !important;
   background: #bd0000;
-width: 100%;
-color: #fff;
+  width: 100%;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   font-family: system-ui;
   text-decoration: none !important;
   cursor: pointer;
 }
-.mbnav{
+
+.mbnav {
   color: #333333;
   font-size: 14px;
   font-weight: 600;
@@ -188,18 +194,23 @@ color: #fff;
   cursor: pointer;
   width: 100%;
 }
+
 @media (max-width: 768px) {
+
   /* Your styles here */
   .remenu,
-  .respnev1{
+  .respnev1 {
     display: none !important;
   }
-  .reslider{
+
+  .reslider {
     display: block !important;
   }
- .reflex{
-  display: flex !important;
- }
+
+  .reflex {
+    display: flex !important;
+  }
+
   /* .respnev2{
     display: block !important;
   } */
@@ -207,29 +218,65 @@ color: #fff;
 
 /* CSS for screens between 768px and 1024px (e.g., tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
+
   /* Your styles here */
   .reslider,
   .reflex,
-  .respnev2{
+  .respnev2 {
     display: none !important;
   }
+
   .respnev1,
-   .remenu{
-display: block  !important;
+  .remenu {
+    display: block !important;
   }
 }
 
 /* CSS for screens larger than 1024px (e.g., desktops) */
 @media (min-width: 1025px) {
+
   /* Your styles here */
   .reslider,
   .reflex,
-  .respnev2{
+  .respnev2 {
     display: none !important;
   }
- 
-   .respnev1,
-  .remenu{
-    display: block  !important;
-      }
+
+  .respnev1,
+  .remenu {
+    display: block !important;
+  }
+}
+
+/* // custom button */
+.slide-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: all 500ms ease-in-out;
+}
+
+.slide-button:hover span {
+  color: #fff !important;
+}
+
+.slide-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.slide-button:hover::after {
+  left: 0%;
+  right: auto;
+  color: #fff;
+  width: 100%;
 }

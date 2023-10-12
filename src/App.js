@@ -8,6 +8,7 @@ import {
   Code,
   Grid,
   theme,
+  CSSReset,
 } from '@chakra-ui/react';
 import './css/Style.css'
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -45,6 +46,8 @@ function App() {
   AOS.init();
   return (
     <>
+     <ChakraProvider >
+      {/* <CSSReset /> */}
     <SubNavbar/>
       <Navbar/>
 <Router>
@@ -76,6 +79,7 @@ function App() {
    
   </Routes>
 </Router>
+</ChakraProvider>
 </>
     // <ChakraProvider theme={theme}>
     /* <Box textAlign="center" fontSize="xl">

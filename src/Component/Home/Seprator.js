@@ -21,7 +21,7 @@ const Seprator = () => {
 {/* mobile view */}
 
 
-            <Container maxW='90%' m='auto' pb='0px' pt='10px'  className="reslider">
+            <Container maxW='100%' m='auto' pb='0px' pt='10px'  className="reslider">
                 <Box p='10px'  color='#fff' bg='#bd0000'>
                    <VStack justifyContent='space-between' border='1px dashed #fff' p='20px'>
                     <Text color='#fff' 

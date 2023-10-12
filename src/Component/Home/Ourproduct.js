@@ -97,13 +97,15 @@ const Ourproduct = () => {
                 <Box py='4rem'>
                 <Slider {...settings}>
       <div>
-      <Center w='290px'  h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/switch-yards")}
+      <Center w='290px'  h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/electrical-panel")}
       onMouseLeave={handleMouseLeave}  backgroundColor={isHovered ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='10px' px='40px'>
                                 <IoIosSwitch color={isHovered ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Switch Yards</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>They play a crucial role in transmitting, distributing, and controlling electrical power. </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Main LT Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>
+                                A "Main LT Panel"  refers to a Low-Tension or Low-Voltage Main Distribution Panel . 
+                                </Label>
                             <Circle cursor='pointer'  size='45px' bg={isHovered ?  '#fff':'#bd0000' } color={isHovered ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -117,7 +119,9 @@ const Ourproduct = () => {
                         <VStack textAlign='center' gap='10px' px='40px'>
                                 <IoIosSpeedometer color={isMouse ? '#fff' : '#bd0000'} fontSize={'35px'} />
                             <MedHeading fontSize='20px !important' fontWeight='500' color={isMouse ? '#fff !important' : '#333333'}>Metering panel</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isMouse ? '#fff !important' :' #808080'}>  an electrical enclosure  that houses various electrical meters equipment</Label>
+                            <Label border='none !important' lineHeight='25px' color={isMouse ? '#fff !important' :' #808080'}> 
+                             An electrical enclosure  that houses various electrical meters equipment.
+                             </Label>
                             <Circle cursor='pointer'  size='45px' bg={isMouse ?  '#fff':'#bd0000' } color={isMouse ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -125,13 +129,15 @@ const Ourproduct = () => {
                     </Center>
       </div>
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/cabel-earthling")}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/amf-panels")}
       onMouseLeave={mouseLeave}  backgroundColor={isMouseHover ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='5px' px='40px'>
                                 <RiWirelessChargingFill color={isMouseHover ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>Cable Earthling</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>The primary purposes of cable earthing are stablitiy, safety and Equipment Protection </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}> AMF Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>
+                                AMF stands for "Auto Mains Failure," and AMF panels, also known as Automatic Mains Failure panels.
+                                 </Label>
                             <Circle cursor='pointer'  size='45px' bg={isMouseHover ?  '#fff':'#bd0000' } color={isMouseHover ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -141,13 +147,15 @@ const Ourproduct = () => {
      
    
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/industrial-panels")}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/APFC-panel")}
       onMouseLeave={handleBlue}  backgroundColor={isHoverBlue ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='11px' px='40px'>
                                 <RiBuildingFill color={isHoverBlue ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>Industrial Panel</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}> These panels are designed to provide protection, organization,</Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>VFD Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}>
+                                VFD stands for Variable Frequency Drive, and  are electrical control panels .
+                                </Label>
                             <Circle cursor='pointer' size='45px' bg={isHoverBlue ?  '#fff':'#bd0000' } color={isHoverBlue ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -155,13 +163,15 @@ const Ourproduct = () => {
                     </Center>
       </div>
       <div>
-      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/transformers")}
+      <Center w='290px'  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/breakers")}
       onMouseLeave={handleGreen}  backgroundColor={isHoverGreen ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='10px' px='40px'>
                                 <GiElectric color={isHoverGreen ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Transformers</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>It operates on the principle that a changing magnetic field in one coil of wire </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Breakers</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>
+                                In electrical engineering, circuit breakers are safety devices designed.
+                                </Label>
                             <Circle cursor='pointer'  size='45px' bg={isHoverGreen ?  '#fff':'#bd0000' } color={isHoverGreen ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -174,7 +184,7 @@ const Ourproduct = () => {
                 
             </Container>
             <Box className="reslider">
-            <Container maxW='90%' m='auto' pt='30px' pb='0px' >
+            <Container maxW='100%' m='auto' pt='30px' pb='0px' >
                 <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>BEST ELECTRICAL SERVICES</MedHeading>
                 {/* <Divider  orientation='horizontal' border='1.5px solid #bd0000' width='80px' m='auto' /> */}
                 <Text
@@ -189,13 +199,15 @@ const Ourproduct = () => {
                 <Box py='2rem'>
                 <Slider {...settingsA}>
       <div>
-      <Center   h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/switch-yards")}
+      <Center   h='250px' m='auto' onMouseEnter={handleMouseEnter} onClick={()=>navigate("/electrical-panel")}
       onMouseLeave={handleMouseLeave}  backgroundColor={isHovered ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='10px' px='10px'>
                                 <IoIosSwitch color={isHovered ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Switch Yards</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>They play a crucial role in transmitting, distributing, and controlling electrical power. </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHovered ? '#fff !important' : '#333333'}>Main LT Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHovered ? '#fff !important' :' #808080'}>
+                                                                A "Main LT Panel"  refers to a Low-Tension or Low-Voltage Main Distribution Panel . 
+ </Label>
                             <Circle cursor='pointer'  size='45px' bg={isHovered ?  '#fff':'#bd0000' } color={isHovered ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -217,13 +229,15 @@ const Ourproduct = () => {
                     </Center>
       </div>
       <div>
-      <Center  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/cabel-earthling")}
+      <Center  h='250px' m='auto'  onMouseEnter={mouseEnter} onClick={()=>navigate("/APFC-panel")}
       onMouseLeave={mouseLeave}  backgroundColor={isMouseHover ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='5px' px='10px'>
                                 <RiWirelessChargingFill color={isMouseHover ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>Cable Earthling</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>The primary purposes of cable earthing are stablitiy, safety and Equipment Protection </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isMouseHover ? '#fff !important' : '#333333'}>VFD Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isMouseHover ? '#fff !important' :' #808080'}>
+                            VFD stands for Variable Frequency Drive, and  are electrical control panels .
+                                 </Label>
                             <Circle cursor='pointer'  size='45px' bg={isMouseHover ?  '#fff':'#bd0000' } color={isMouseHover ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -233,13 +247,15 @@ const Ourproduct = () => {
      
    
       <div>
-      <Center   h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/industrial-panels")}
+      <Center   h='250px' m='auto'  onMouseEnter={EnterBlue} onClick={()=>navigate("/amf-panels")}
       onMouseLeave={handleBlue}  backgroundColor={isHoverBlue ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='11px' px='10px'>
                                 <RiBuildingFill color={isHoverBlue ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}>Industrial Panel</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}> These panels are designed to provide protection, organization,</Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverBlue ? '#fff !important' : '#333333'}> AMF Panels</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverBlue ? '#fff !important' :' #808080'}>
+                            AMF stands for "Auto Mains Failure," and AMF panels, also known as Automatic Mains Failure panels.
+                                 </Label>
                             <Circle cursor='pointer' size='45px' bg={isHoverBlue ?  '#fff':'#bd0000' } color={isHoverBlue ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>
@@ -247,13 +263,15 @@ const Ourproduct = () => {
                     </Center>
       </div>
       <div>
-      <Center  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/transformers")}
+      <Center  h='250px' m='auto'  onMouseEnter={EnterGreen} onClick={()=>navigate("/breakers")}
       onMouseLeave={handleGreen}  backgroundColor={isHoverGreen ? '#bd0000' : 'rgb(226 229 236)' }   
                     >
                         <VStack textAlign='center' gap='10px' px='10px'>
                                 <GiElectric color={isHoverGreen ? '#fff' : '#bd0000'} fontSize={'35px'} />
-                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Transformers</MedHeading>
-                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>It operates on the principle that a changing magnetic field in one coil of wire </Label>
+                            <MedHeading fontSize='20px !important' fontWeight='500' color={isHoverGreen ? '#fff !important' : '#333333'}>Breakers</MedHeading>
+                            <Label border='none !important' lineHeight='25px' color={isHoverGreen ? '#fff !important' :' #808080'}>
+                            In electrical engineering, circuit breakers are safety devices designed.
+                                 </Label>
                             <Circle cursor='pointer'  size='45px' bg={isHoverGreen ?  '#fff':'#bd0000' } color={isHoverGreen ?'#bd0000':  '#fff'}>
                                 <BsArrowRight fontSize='25px' />
                             </Circle>

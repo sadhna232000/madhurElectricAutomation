@@ -4,6 +4,7 @@ import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@c
 import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
+import VFD from "../../Assets/VFD.jpg"
 import electric_10 from "../../Assets/electric_10.jpg"
 import { FaCheck } from "react-icons/fa";
 const APFCpanel =()=>{
@@ -21,7 +22,11 @@ const APFCpanel =()=>{
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={electric_10} h='425px' />
+                            <HStack>
+                            <Img src={VFD} h='500px' />
+                            <Img src={electric_10} h='500px' w='400px'/>
+
+                            </HStack>
 
                             <MedHeading pb='10px' pt='20px'>VFD PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
@@ -62,7 +67,7 @@ const APFCpanel =()=>{
                 >
                     <GridItem >
                         <Stack>
-                            <Img src={electric_10} w='100%' />
+                            <Img src={VFD} w='100%' />
 
                             <MedHeading pb='10px' pt='20px'>VFD PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='80px' />

@@ -10,8 +10,8 @@ const About = () => {
         <>
             
             <Breadcrumbs name='ABOUT' home='Home' page='About' />
-            <Container maxW='75%' m='auto' py='40px' className="remenu">
-                <Grid templateColumns='repeat(2, 1fr)' gap={30}>
+            <Container maxW={{base:'100%',sm:'100%' ,  md:'100%', lg:'75%', xl:'75%' , '2xl':'75%'}} m='auto' py='40px' >
+                <Grid templateColumns={{base:'repeat(1, 1fr)' , md:'repeat(1, 1fr)' , lg:'repeat(2, 1fr)' ,xl:'repeat(2, 1fr)' ,'2xl':'repeat(2, 1fr)'}}        gap={{base:'10px',sm:'10px',md:'10px' , lg:'30px',xl:'30px' ,'2xl':'30px'} }>
                     <GridItem >
                         <MedHeading pb='15px'>WHO ARE WE ?</MedHeading>
                         <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />
@@ -39,7 +39,7 @@ competently.</Parcontent>
                     </GridItem>
                     <GridItem display="flex" justifyContent="end" alignItems="end" >
 
-                        <Img src={MAINLTpanel} w='500px'
+                        <Img src={MAINLTpanel} w={{base:'100%',sm:'100%',md:'100%' , lg:'500px',xl:'500px' ,'2xl':'500px'} }
                             height='500px'
                             objectFit='cover'
                             objectPosition='center' />
@@ -49,7 +49,7 @@ competently.</Parcontent>
                 </Grid>
             </Container>
             {/* mobile view */}
-            <Container maxW='90%' m='auto' py='40px' className="reslider">
+            {/* <Container maxW='90%' m='auto' py='40px' className="reslider">
                 <Grid templateColumns='repeat(1, 1fr)' gap={20}>
                     <GridItem >
                         <MedHeading pb='15px'>WHO ARE WE ?</MedHeading>
@@ -87,7 +87,7 @@ competently.</Parcontent>
 
                     </GridItem>
                 </Grid>
-            </Container>
+            </Container> */}
             <Footer />
         </>
     )

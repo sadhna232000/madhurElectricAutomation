@@ -10,10 +10,10 @@ const CompanyAbout = () => {
             <Container maxW='75%' m='auto' py='80px' pt='100px' className="remenu">
                 <Grid templateColumns='repeat(2, 1fr)' gap={40}>
                     <GridItem display="flex" justifyContent="end" alignItems="end" position='relative'>
-                        <Img src={about} width='88%'
+                        <Img src={electric } width='88%'
                             objectFit='cover'
                             height='414px'  objectPosition='left'/>
-                        <Img src={electric} width='50%'
+                        <Img src={about} width='50%'
                             left='0px'
                             bottom='-60px'
                             border='7px solid #fff'
@@ -52,10 +52,10 @@ competently.
                 </Grid>
             </Container>
             {/* mobile view */}
-            <Container maxW='90%' m='auto' py='30px'  className="reslider">
-                <Grid templateColumns='repeat(1, 1fr)' gap={40}>
+            <Container maxW='100%' m='auto' py='40px'  className="reslider">
+                <Grid templateColumns='repeat(1, 1fr)' gap={10}>
                     <GridItem display="flex" justifyContent="center" alignItems="end" position='relative'>
-                        <Img src={about} width='100%'
+                        <Img src={electric} width='100%'
                             objectFit='cover'
                             height='270px'  objectPosition='left'/>
                         {/* <Img src={electric} width='50%'

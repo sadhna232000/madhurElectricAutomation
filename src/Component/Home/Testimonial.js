@@ -82,7 +82,7 @@ const Testimonial = () => {
                         border='1px solid #f1f1f1'
                         fontWeight='500'
                         padding='30px'
-                        w='250px' 
+                        w='350px' 
                         m='auto'
                         fontFamily='sans-serif'
                     >
@@ -101,7 +101,7 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
+                        w='350px' 
                         m='auto'
                         padding='30px'
 
@@ -123,7 +123,7 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
+                        w='350px' 
                         m='auto'
                         padding='30px'
 
@@ -144,7 +144,7 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
+                        w='350px' 
                         m='auto'
                         padding='30px'
 
@@ -165,7 +165,7 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
+                        w='350px' 
                         m='auto'
                         padding='30px'
 
@@ -186,7 +186,7 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
+                      w='350px' 
                         m='auto'
                         padding='30px'
 
@@ -210,7 +210,7 @@ const Testimonial = () => {
             </Container>
 
 {/* Mobile view */}
-            <Container maxW='90%' m='auto' className="reslider" pt="20px">
+            <Container maxW='100%' m='auto' className="reslider" pt="20px">
             <MedHeading pb='10px' fontSize='18px !important' textAlign='center'>TESTIMONIAL</MedHeading>
                         <Divider orientation='horizontal'  m='auto' border='1.5px solid #bd0000' width='140px' />                
                 <Text
@@ -229,7 +229,6 @@ const Testimonial = () => {
                         border='1px solid #f1f1f1'
                         fontWeight='500'
                         padding='30px'
-                        w='250px' 
                         m='auto'
                         fontFamily='sans-serif'
                     >
@@ -248,7 +247,6 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
                         m='auto'
                         padding='30px'
 
@@ -270,7 +268,6 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
                         m='auto'
                         padding='30px'
 
@@ -291,7 +288,6 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
                         m='auto'
                         padding='30px'
 
@@ -312,7 +308,6 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
                         m='auto'
                         padding='30px'
 
@@ -333,7 +328,6 @@ const Testimonial = () => {
         <h3>  <Box background='#f8f8f8 '
                         border='1px solid #f1f1f1'
                         fontWeight='500'
-                        w='250px' 
                         m='auto'
                         padding='30px'
 

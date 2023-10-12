@@ -18,16 +18,17 @@ import riceplants from "../../Assets/ricemil.webp"
 import dalmill from "../../Assets/dalmil.jpeg"
 import cement from "../../Assets/cementfactory.jpeg"
 import textiles from "../../Assets/textile.jpeg"
+import hotel from "../../Assets/hotel.jpg"
 
 const Clients = () => {
     return (
         <>
             <Breadcrumbs name='OUR CLIENTS' home='Home' page='Our Clients' />
 
-            <Container maxW='75%' m='auto' py='40px' className="remenu">
-<Grid templateColumns='repeat(3, 1fr)' gap={10} rowGap={30}>
+            <Container maxW={{base:'100%',sm:'100%',md:'100%' , lg:'75%',xl:'75%' ,'2xl':'75%'} } m='auto' py='40px' >
+<Grid templateColumns={{base:'repeat(1, 1fr)',sm:'repeat(1, 1fr)',md:'repeat(2, 1fr)', lg:'repeat(3, 1fr)',xl:'repeat(3, 1fr)','2xl':'repeat(3, 1fr)'} } gap={10} rowGap={30}>
     <GridItem >
-        <Box padding= '30px'  pb='20px !important' w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px'  pb='20px !important'  m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={crushing} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Crushing Plant</MedHeading>
@@ -39,7 +40,7 @@ const Clients = () => {
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'  w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important'   m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={hospital} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Hospitals</MedHeading>
@@ -52,9 +53,9 @@ const Clients = () => {
     </GridItem>
     
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
-<Img src={crushing} h='170px'/>
+<Img src={hotel} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Hotels</MedHeading>
 <Label border='none !important' lineHeight='25px' >Hotels may have multiple subpanels located in different areas of the facility. </Label>
 
@@ -62,7 +63,7 @@ const Clients = () => {
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={oilplant} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Oil Plant</MedHeading>
@@ -74,7 +75,7 @@ An "oil electrical panel" typically refers to an electrical distribution panel t
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={sugar} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Sugar Plant</MedHeading>
@@ -85,7 +86,7 @@ Electrical panels used in sugar plant industries play a crucial role in powering
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={school} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>School Project</MedHeading>
@@ -96,7 +97,7 @@ Electrical panels in a school are essential components of the electrical distrib
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={college} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>College Project</MedHeading>
@@ -107,7 +108,7 @@ Electrical panels in a College are essential components of the electrical distri
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={houshingsociety} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Houshing Society</MedHeading>
@@ -118,7 +119,7 @@ An electrical panel in a housing society, also known as a residential electrical
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={builing} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Builder Segments</MedHeading>
@@ -129,7 +130,7 @@ An electrical panel in a building segment, often referred to as a "subpanel" or 
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={department} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Goverment Department</MedHeading>
@@ -140,7 +141,7 @@ Government department buildings typically have a main electrical panel. </Label>
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={cpwd} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>CPWD</MedHeading>
@@ -150,7 +151,7 @@ CPWD projects, whether they involve government offices, public buildings, have a
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={phed} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>PHED</MedHeading>
@@ -161,7 +162,7 @@ Electrical panels in PHED facilities include circuit breakers to protect individ
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={electricity} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Electricity Board</MedHeading>
@@ -172,7 +173,7 @@ An "electricity board" typically refers to a government agency or utility compan
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={riceplants} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Rice Plants</MedHeading>
@@ -183,7 +184,7 @@ In the context of rice plants, electrical panels are essential for managing and 
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={dalmill} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Dal Mill</MedHeading>
@@ -194,7 +195,7 @@ In larger dal milling facilities, subpanels may be used to distribute electrical
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={cement} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Cement Factory</MedHeading>
@@ -205,7 +206,7 @@ In a cement factory, This main electrical distribution panel is responsible for 
         </Box>
     </GridItem>
     <GridItem >
-        <Box padding= '30px' pb='20px !important'w='270px' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
+        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
             <Stack gap='15px'>
 <Img src={textiles} h='170px'/>
 <MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Textiles Industries</MedHeading>
@@ -223,201 +224,7 @@ Electrical panels in the textile industry play a crucial role in the production,
 
 
             {/* mobile view */}
-            <Container maxW='90%' m='auto' py='40px' className="reslider">
-<Grid templateColumns='repeat(1, 1fr)' gap={10} rowGap={20}>
-    <GridItem >
-        <Box padding= '30px'  pb='20px !important'  m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={crushing} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Crushing Plant</MedHeading>
-<Label border='none !important' lineHeight='25px' >A crushing plant is a machine used to reduce large rocks into smaller rocks, gravel, or rock dust.
- {/* It is commonly used in various industries. */}
-  </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important'  m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={hospital} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Hospitals</MedHeading>
-<Label border='none !important' lineHeight='25px' > Hospitals have specific requirements of electric panel for their electrical systems 
-{/* to ensure patient safety, continuous operation, and the support of critical medical equipment. */}
-</Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={crushing} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Hotels</MedHeading>
-<Label border='none !important' lineHeight='25px' >Hotels may have multiple subpanels located in different areas of the facility. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={oilplant} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Oil Plant</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-An "oil electrical panel" typically refers to an electrical distribution panel that uses oil as cooling. 
-    </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={sugar} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Sugar Plant</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Electrical panels used in sugar plant industries play a crucial role in powering and controlling.    </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={school} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>School Project</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Electrical panels in a school are essential components of the electrical distribution system.   </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={college} h='170px' w='100%' />
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>College Project</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Electrical panels in a College are essential components of the electrical distribution system.   </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={houshingsociety} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Houshing Society</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-An electrical panel in a housing society, also known as a residential electrical distribution panel. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={builing} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Builder Segments</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-An electrical panel in a building segment, often referred to as a "subpanel" or "distribution board".</Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={department} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Goverment Department</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Government department buildings typically have a main electrical panel. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={cpwd} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>CPWD</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-CPWD projects, whether they involve government offices, public buildings, have a main electrical panel.</Label>
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={phed} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>PHED</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Electrical panels in PHED facilities include circuit breakers to protect individual circuits </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={electricity} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Electricity Board</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-An "electricity board" typically refers to a government agency or utility company responsible for generating, transmitting. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={riceplants} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Rice Plants</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-In the context of rice plants, electrical panels are essential for managing and controlling the electrical systems </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={dalmill} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Dal Mill</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-In larger dal milling facilities, subpanels may be used to distribute electrical power to specific sections or machines within the mill. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={cement} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Cement Factory</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-In a cement factory, This main electrical distribution panel is responsible for supplying electricity to various parts of the factory. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    <GridItem >
-        <Box padding= '30px' pb='20px !important' m='auto' boxShadow= 'rgba(149, 157, 165, 0.2) 0px 8px 24px'> 
-            <Stack gap='15px'>
-<Img src={textiles} h='170px' w='100%'/>
-<MedHeading fontSize='20px !important' fontWeight='600'  color='#bd0000 !important'>Textiles Industries</MedHeading>
-<Label border='none !important' lineHeight='25px' >
-Electrical panels in the textile industry play a crucial role in the production, control, and management of electrical power. </Label>
-
-            </Stack>
-        </Box>
-    </GridItem>
-    
-
-</Grid>
-            </Container>
+        
 
         </>
     )

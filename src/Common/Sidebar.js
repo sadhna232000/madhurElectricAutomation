@@ -4,7 +4,7 @@ const Sidebar =()=>{
     return(
         <>
         
-        <Stack gap={10}>
+        <Stack gap={4}>
        
         <Box className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} href='/electrical-panel'>Main LT Panels</Link> 
@@ -45,7 +45,7 @@ const Sidebar =()=>{
                     <Link  className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'} href='/breakers'> Breakers</Link> 
                       </Box> 
                       <Box className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'} href='/solar-panel'> SolarPanel</Link> 
+                    <Link  className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'} href='/solar-panel'> Solar Panel</Link> 
                       </Box> 
        
         
@@ -64,7 +64,7 @@ const Sidebar =()=>{
                     <Link  className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'} href='/electrical-installation'>Electrical Installation Services</Link> 
                       </Box>
         <Box className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'} href='/electrical-analytes'> Electrical Drive Equality</Link> 
+                    <Link  className={window.location.pathname === '/electrical-analytes' ? 'actdive' : 'drop'} href='/electrical-analytes'> Electrical Drive Quality</Link> 
                       </Box>
 
        

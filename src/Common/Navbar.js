@@ -76,7 +76,7 @@ function Navbar() {
                </MenuButton>
               
                <Collapse in={isOpen2} >
-               <Grid templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={10} >
+               <Grid templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={2} >
                    <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
                   <Link
@@ -322,12 +322,7 @@ function Navbar() {
       </Collapse>
   
     <Box  className='remenu' position="sticky" top="-1px" p='5px' zIndex="9999999" bg='#fff' borderBottom='1px solid #80808038' boxShadow='rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'>
-    
-       
-
-        
-        
-         
+   
     <Container maxW='75%' m='auto' className='remenu' >       
     <Flex alignItems="center" justifyContent={'space-between'}>       
       <Img src={Logo} h='95px' objectPosition={'center'} />         
@@ -340,16 +335,17 @@ function Navbar() {
                      <Link className={window.location.pathname === '/about' ? 'active' : 'nav'} href='/about'> About</Link>
             </Box>         
                 <Menu>          
-                       <MenuButton as={Button} _expanded={{ bg: '#bd0000', color: '#fff !important', borderRadius: '50px' }} rightIcon={<RiArrowDropDownLine />}>
+                       <MenuButton bg='none !important' borderRadius= '50px' as={Button} _expanded={{ bg: '#bd0000 !important', color: '#fff !important', borderRadius: '50px' }} rightIcon={<RiArrowDropDownLine  fontSize='20px'/>}>
                   Service Range
                </MenuButton>
              <MenuList p='20px' pt='15px' w='400px !important' bg='#fff !important' border='0.5px solid #e7e1e1'>
 
-                  <Grid templateColumns="repeat(2, 1fr)" columnGap={20} rowGap={10} >
-                   <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                  <Grid templateColumns="repeat(2, 1fr)" columnGap={5} rowGap={3} >
+                   <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                   <Link
                         fontSize='14px'
+                        // borderBottom='1px dashed darkgray !important'
                         paddingBottom='5px'
                         fontWeight='500'
                         letterSpacing='1px'
@@ -358,7 +354,7 @@ function Navbar() {
                         textDecoration='none !important'
                         cursor='pointer' href='/electrical-panel'>Main LT Panels</Link>
                     </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -371,7 +367,7 @@ function Navbar() {
                         cursor='pointer'
                         href="/motor-controls"> Motor Controls Panels</Link>
                     </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -383,7 +379,7 @@ function Navbar() {
                         textDecoration='none !important'
                         cursor='pointer' href="/metering-panel">Metering Panel</Link>
                     </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px'  h='40px'borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -395,7 +391,7 @@ function Navbar() {
                         textDecoration='none !important'
                         cursor='pointer' href="/amf-panels">AMF Panel</Link>
                     </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -420,7 +416,7 @@ function Navbar() {
             cursor='pointer' href="/transmission-lines">Transmission Lines</Link>
     </MenuItem> */}
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -433,7 +429,7 @@ function Navbar() {
                         cursor='pointer' href="/switch-yards"> Earthing</Link>
                     </MenuItem>
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -459,7 +455,7 @@ function Navbar() {
             cursor='pointer' href="/transformers">Transformers</Link>
     </MenuItem> */}
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -472,7 +468,7 @@ function Navbar() {
                         cursor='pointer' href="/industrial-panels">Load Management Panels</Link>
                     </MenuItem>
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -486,7 +482,7 @@ function Navbar() {
                         href="/DG-sets"> DG Synchronizing Panel</Link>
                     </MenuItem>
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -499,7 +495,7 @@ function Navbar() {
                         cursor='pointer'
                         href="/cabel-earthling">Cabling</Link>
                     </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -526,7 +522,7 @@ function Navbar() {
            textDecoration='none !important'
             cursor='pointer' href="/HT-LT-distribution-panel">HT / LT Distribution Panel</Link>
     </MenuItem> */}
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -539,7 +535,7 @@ function Navbar() {
                         cursor='pointer' href="/electrical-installation">Electrical Installations Services</Link>
                     </MenuItem>
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -552,7 +548,7 @@ function Navbar() {
                         cursor='pointer' href="/hospital-services">Hospital Electrical Services</Link>
                     </MenuItem>
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'
@@ -566,7 +562,7 @@ function Navbar() {
                     </MenuItem>
 
 
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
 
                       <Link
                         fontSize='14px'

@@ -5,7 +5,7 @@ import CustomButton from "../../Common/CustomButton";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import panel from "../../Assets/panel.jpg"
+import gland from "../../Assets/gland.jpg"
 const HomeSlider = () => {
     const settings = {
         dots: false,
@@ -14,7 +14,8 @@ const HomeSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true, // Enable autoplay
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    arrows:false,
       };
     return (
         <>
@@ -39,7 +40,7 @@ const HomeSlider = () => {
                         
                         Electric is All About of Electrician
                         </Text>
-                        <HStack gap={20} justifyContent='center' pt='30px'>
+                        <HStack gap={10} justifyContent='center' pt='30px'>
                        <Box  data-aos="fade-right" data-aos-duration="3000"   > <CustomButton 
                    href="/about"
                        class='sliding-button' border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
@@ -53,10 +54,14 @@ const HomeSlider = () => {
       <div><Img src={sliderimg} h='590px' w='100%' 
               objectFit={'cover'} 
                 /></div>
-       {/* <div><Img src={panel} h='590px' w='100%' 
-              objectFit={'cover'} 
+    <div>
+    <Box bg={'#161617a6'} h='590px' w='100%' position='absolute' opacity='0.5'>
+                </Box>
+      <Img src={gland} h='590px' w='100%' 
+              objectFit={'cover'}
+              objectPosition='center' 
                 /></div>
-      <div><Img src={sliderimg} h='590px' w='100%' 
+         {/* <div><Img src={sliderimg} h='590px' w='100%' 
               objectFit={'cover'} 
                 /></div> */}
       </Slider>
@@ -83,7 +88,7 @@ const HomeSlider = () => {
                         
                         Electric is All About of Electrician
                         </Text>
-                        <VStack gap={20} justifyContent='center' pt='30px'>
+                        <VStack gap={5} justifyContent='center' pt='30px'>
                        <Box    > <CustomButton 
                    href="/about"
                        class='sliding-button' border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>

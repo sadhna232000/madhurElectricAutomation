@@ -1,11 +1,12 @@
 import React from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
-import { Box, Container, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Link, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import Footer from "../../Common/Footer";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import { ImLocation2, ImPhone } from "react-icons/im";
 import { AiFillMail } from "react-icons/ai";
 const Contact=()=>{
+    const email = 'madhurelectric@gmail.com';
     return(
         <>
  <Breadcrumbs name='CONTACT' home='Home' page='Contact' />
@@ -40,7 +41,7 @@ const Contact=()=>{
     
 <AiFillMail color="#bd0000" fontSize={'35px'}/>
 <MedHeading fontSize='20px !important' fontWeight='500'>Email</MedHeading>
-<Parcontent lineHeight='20px !important'>madhurelectric@gmail.com</Parcontent>
+<Link href={`mailto:${email}`} textDecoration="none"><Parcontent lineHeight='20px !important'  color='#000 !important'>madhurelectric@gmail.com</Parcontent></Link>
 </VStack>
 
 </Box>
@@ -79,7 +80,7 @@ const Contact=()=>{
     
 <AiFillMail color="#bd0000" fontSize={'35px'}/>
 <MedHeading fontSize='20px !important' fontWeight='500'>Email</MedHeading>
-<Parcontent lineHeight='20px !important'>madhurelectric@gmail.com</Parcontent>
+<Link href={`mailto:${email}`} textDecoration="none"><Parcontent lineHeight='20px !important'>madhurelectric@gmail.com</Parcontent></Link>
 </VStack>
 
 </Box>

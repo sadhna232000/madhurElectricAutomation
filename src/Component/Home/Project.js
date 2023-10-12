@@ -1,4 +1,4 @@
-import { Container, Divider, Grid, GridItem, Img, Text } from "@chakra-ui/react";
+import { Box, Container, Divider, Grid, GridItem, Img, Modal, ModalBody, ModalContent, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
 import React  from "react";
 import cabelpanel from "../../Assets/cabelpanel.jpg"
 import Electricalpanel from "../../Assets/electric_panel.jpg"
@@ -8,11 +8,14 @@ import electric_5 from "../../Assets/electric_5.jpg"
 import electric_6 from "../../Assets/electric_6.jpg"
 import electric_2 from "../../Assets/electric_2.jpg"
 import electric_8 from "../../Assets/electric_8.jpg"
+import electric_1 from "../../Assets/electric_1.jpg"
 import { MedHeading } from "../../Common/Style";
 const Project=()=>{
+  // const { isOpen, onOpen, onClose } = useDisclosure()
+
     return(
         <>
-        <Container maxW='75%' m='auto'   pb='60px' className="remenu">
+        <Container position='relative' maxW='75%' m='auto' pb='60px'  className="remenu">
         <MedHeading pb='15px' textAlign='center' fontWeight='500' fontSize='18px !important'>Gallery Section</MedHeading>
 
         <Text
@@ -32,9 +35,9 @@ const Project=()=>{
   pt='50px'
 //   templateRows='repeat(2, 1fr)'
   templateColumns='repeat(4, 1fr)'
-  gap={10}
+  gap={3}
 >
-<GridItem    ><Img src={closemeter} w='270px' h='250px'  /></GridItem>
+<GridItem    ><Img src={electric_1} w='270px' h='250px'/></GridItem>
 <GridItem><Img src={Electricalpanel} w='270px' h='250px' /></GridItem>
 
   <GridItem    ><Img src={cabelpanel} w='270px' h='250px' /></GridItem>
@@ -48,6 +51,7 @@ const Project=()=>{
   
 </Grid>
         </Container>
+       
         </>
     )
 }
