@@ -1,10 +1,11 @@
-import { Box, Center, Container, Divider, Grid, GridItem, HStack, Img, SimpleGrid } from "@chakra-ui/react";
+import { Box, Center, Circle, Container, Divider, Grid, GridItem, HStack, Img, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import logo from '../Assets/mdlogo.png'
 import { Content, Label, MedHeading, Parcontent } from "./Style";
 import { ImPhone } from "react-icons/im";
 import { AiFillMail } from "react-icons/ai";
 import { SocialIcon } from "react-social-icons";
+import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
@@ -20,8 +21,11 @@ const Footer = () => {
                                 <HStack gap='15px'>
                                     <SocialIcon  target="_blank" url="https://facebook.com"   style={{ width: '30px', height: '30px' }} />
                                     <SocialIcon target="_blank" url="https://google.com" style={{ width: '30px', height: '30px' }} />
-                                    <SocialIcon target="_blank" url="https://whatsapp.com" style={{ width: '30px', height: '30px' }} />
-                                </HStack>
+                                    <a href="https://wa.me/919414046267" target="_blank">
+        <Circle size='33px' bg='green' color='white'>
+    <FaWhatsapp fontSize='20px' />
+  </Circle>
+</a>                                </HStack>
                             </GridItem>
                             <GridItem colSpan={1} w='400px'>
                                 <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>
@@ -123,8 +127,11 @@ const Footer = () => {
                                 <HStack gap='15px' justifyContent='center' pt='15px'>
                                     <SocialIcon  target="_blank" url="https://facebook.com"   style={{ width: '30px', height: '30px' }} />
                                     <SocialIcon target="_blank" url="https://google.com" style={{ width: '30px', height: '30px' }} />
-                                    <SocialIcon target="_blank" url="https://whatsapp.com" style={{ width: '30px', height: '30px' }} />
-                                </HStack>
+                                    <a href="https://wa.me/919414046267" target="_blank">
+        <Circle size='33px' bg='green' color='white'>
+    <FaWhatsapp fontSize='20px' />
+  </Circle>
+</a>                                </HStack>
                             </GridItem>
                             <GridItem>
                                 <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>

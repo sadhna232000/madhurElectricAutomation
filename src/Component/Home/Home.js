@@ -16,7 +16,7 @@ const Home =()=>{
         <Ourproduct/>
         <Seprator/>
       <CompanyAbout/>
-         <Testimonial/>
+         {/* <Testimonial/> */}
          <Project/>
        <Location />
          <Footer/>

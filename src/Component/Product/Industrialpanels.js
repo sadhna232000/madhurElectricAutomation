@@ -8,6 +8,8 @@ import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
 import management from "../../Assets/management.jpg"
 import { FaCheck } from "react-icons/fa";
+import MAINLTpanel from '../../Assets/MAINLTpanel.jpg'
+
 const Industrialpanels = () => {
     return (
         <>
@@ -23,7 +25,7 @@ const Industrialpanels = () => {
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            {/* <Img src={management} h='555px' objectFit='contain' /> */}
+                            <Img src={MAINLTpanel} h='555px' w='100%' />
 
                             <MedHeading pb='10px' pt='20px'>LOAD MANAGEMENT PANELS</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />

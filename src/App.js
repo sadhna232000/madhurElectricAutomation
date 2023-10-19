@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ChakraProvider,
   Box,
@@ -40,12 +40,22 @@ import Electricpanel from './Component/Product/Electricpanel';
 // import Distribution from './Component/Product/Distribution';
 import SolarPanel from './Component/Product/SolarPanel';
 import Clients from './Component/Clients/Clients';
+import WaveLoader from './Component/Home/Loading';
 // ..
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // Simulate an API request or any asynchronous operation
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   AOS.init();
   return (
     <>
+    {isLoading ? <WaveLoader/> :
+
      <ChakraProvider >
       {/* <CSSReset /> */}
     <SubNavbar/>
@@ -80,6 +90,8 @@ function App() {
   </Routes>
 </Router>
 </ChakraProvider>
+
+}
 </>
     // <ChakraProvider theme={theme}>
     /* <Box textAlign="center" fontSize="xl">

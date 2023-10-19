@@ -36,7 +36,7 @@ const CompanyAbout = () => {
 
                     "Produce your own clean save the environment"
                 </Text>
-                        <Parcontent fontSize='15px !important' pb='20px' pt='40px' textAlign={'center'} >
+                        <Parcontent fontSize='15px !important' pb='20px' pt='20px' textAlign={'center'} >
                         Madhur Electric Automation, Jaipur was established in the year 2011 
 as a sole proprietorship to manufacturers, suppliers and third party 
 service provider of all type of LT Panels, Motor 

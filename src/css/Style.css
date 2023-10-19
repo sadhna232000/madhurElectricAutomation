@@ -5,15 +5,16 @@
   padding: 0;
   margin: 0;
 }
+
 .css-1m7tg19::before {
-    padding-bottom: 25.25% !important;
+  padding-bottom: 25.25% !important;
 }
 
 .act {
   background: #bd0000;
   border-radius: 50px !important;
   padding: 7px 15px !important;
-color: #fff !important;
+  color: #fff !important;
 }
 
 .active {
@@ -196,6 +197,44 @@ color: #fff !important;
   width: 100%;
 }
 
+.slide.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+ left:0;
+  border-radius: 50px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.show.arrow {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #bd0000;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  right: 0;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
 @media (max-width: 768px) {
 
   /* Your styles here */
@@ -280,4 +319,42 @@ color: #fff !important;
   right: auto;
   color: #fff;
   width: 100%;
+}
+.animated-text-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-text {
+  font-size: 60px;
+  font-style: italic;
+  color: #bd0000; /* Custom text color */
+  animation: pulse 1s linear infinite; /* Animation name and duration */
+}
+
+.animation-dots {
+  animation: dots 1.5s linear infinite; /* Animation name and duration */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
 }
