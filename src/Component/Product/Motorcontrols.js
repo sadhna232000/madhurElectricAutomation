@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -9,6 +9,9 @@ import Footer from "../../Common/Footer";
 import electric_2 from "../../Assets/electric_2.jpg"
 import { FaCheck } from "react-icons/fa";
 const Motorcontrols =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/motor-controls"]);
     return(
         <>
           <Breadcrumbs name='MOTOR CONTROLS PANELS' home='Home' page='Motor Controls Panels' />

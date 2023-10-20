@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -11,6 +11,9 @@ import { FaCheck } from "react-icons/fa";
 import MAINLTpanel from '../../Assets/MAINLTpanel.jpg'
 
 const Industrialpanels = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/load-managements"]);
     return (
         <>
             <Breadcrumbs name='LOAD MANAGEMENT PANELS' home='Home' page='Load Management Panels' />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import solarpanel from "../../Assets/solarpanel.jpeg"
 import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
@@ -6,6 +6,9 @@ import { MedHeading, Parcontent } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
  const SolarPanel = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/solar-panel"]);
     return (
         <>
             <Breadcrumbs name='SOLAR PANEL' home='Home' page='Solar Panel' />

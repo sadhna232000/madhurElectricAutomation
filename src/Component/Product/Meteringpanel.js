@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -11,6 +11,9 @@ import openmeter from "../../Assets/openmeter.jpg"
 import closemeter from "../../Assets/closemeter.jpg"
 import { FaCheck } from "react-icons/fa";
 const Meteringpanel =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/metering-panel"]);
     return(
         <>
           <Breadcrumbs name='METERING PANEL' home='Home' page='Metering Panel' />

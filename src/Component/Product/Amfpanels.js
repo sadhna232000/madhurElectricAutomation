@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -7,6 +7,9 @@ import Footer from "../../Common/Footer";
 import electric_2 from "../../Assets/electric_2.jpg"
 import { FaCheck } from "react-icons/fa";
 const Amfpanels = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/amf-panels"]);
     return (
         <>
             <Breadcrumbs name='amf-panels' home='Home' page='Amf-panels' />

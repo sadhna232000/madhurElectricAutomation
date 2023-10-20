@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
 import crushing from "../../Assets/crushingplant.jpg"
@@ -22,6 +22,10 @@ import hotel from "../../Assets/hotel.jpg"
 import Footer from "../../Common/Footer";
 
 const Clients = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/clients"]);
+    
     return (
         <>
             <Breadcrumbs name='OUR CLIENTS' home='Home' page='Our Clients' />

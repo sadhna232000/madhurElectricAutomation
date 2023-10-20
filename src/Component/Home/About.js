@@ -1,11 +1,17 @@
 import { Box, Container, Divider, Grid, GridItem, Img, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import slider from '../../Assets/slider1.png'
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import MAINLTpanel from '../../Assets/MAINLTpanel.jpg'
 import Footer from "../../Common/Footer";
 const About = () => {
+    
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, ["/about"]);
+      
+     
     return (
         <>
             

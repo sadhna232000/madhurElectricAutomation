@@ -15,6 +15,12 @@
   border-radius: 50px !important;
   padding: 7px 15px !important;
   color: #fff !important;
+  /* color: #fff; */
+  font-size: 14px;
+  font-weight: 600;
+  font-family: system-ui;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .active {

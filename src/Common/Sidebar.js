@@ -11,64 +11,40 @@ const Sidebar =()=>{
        
         <Box className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} onClick={()=>navigate("/electrical-panel")}>Main LT Panels
 
-                    {/* <Link  className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} href='/electrical-panel'></Link>  */}
                       </Box>
-                      <Box className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'} href='/motor-controls'> Motor Controls Panels</Link> 
+                      <Box className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels
                       </Box>
-                      <Box className={window.location.pathname === '/dg-synchronizing' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/dg-synchronizing' ? 'actdive' : 'drop'} href='/dg-synchronizing'> DG Synchronizing Panel</Link> 
+                      <Box className={window.location.pathname === '/dg-synchronizing' ? 'actdive' : 'drop'} onClick={()=>navigate("/dg-synchronizing")}>DG Synchronizing Panel
                       </Box>
-                      {/* <Box className={window.location.pathname === '/HT-LT-distribution-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/HT-LT-distribution-panel' ? 'actdive' : 'drop'} href='/HT-LT-distribution-panel'>HT/LT Distribution Panel</Link> 
-                      </Box> */}
-                      <Box className={window.location.pathname === '/metering-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/metering-panel' ? 'actdive' : 'drop'} href='/metering-panel'> Metering Panels</Link> 
+                   
+                      <Box className={window.location.pathname === '/metering-panel' ? 'actdive' : 'drop'} onClick={()=>navigate("/metering-panel")}> Metering Panels
                       </Box>
        
-                      <Box className={window.location.pathname === '/amf-panels' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/amf-panels' ? 'actdive' : 'act-lik'} href='/amf-panels'> AMF Panels</Link> 
+                      <Box className={window.location.pathname === '/amf-panels' ? 'actdive' : 'drop'} onClick={()=>navigate("/amf-panels")}> AMF Panels
                       </Box>
-                      <Box className={window.location.pathname === '/VFD-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/VFD-panel' ? 'actdive' : 'drop'} href='/VFD-panel'> VFD Panels</Link> 
+                      <Box className={window.location.pathname === '/VFD-panel' ? 'actdive' : 'drop'} onClick={()=>navigate("/VFD-panel")}> VFD Panels
                       </Box>
-     
-                      {/* <Box className={window.location.pathname === '/transmission-lines' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/transmission-lines' ? 'actdive' : 'drop'} href='/transmission-lines'> Transmission Lines</Link> 
-                      </Box> */}
-        {/* <Box className={window.location.pathname === '/transformers' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/transformers' ? 'actdive' : 'drop'} href='/transformers'> Transformers</Link> 
-                      </Box>*/}
-                        <Box className={window.location.pathname === '/cabling' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/cabling' ? 'actdive' : 'drop'} href='/cabling'> Cabling </Link> 
+                        <Box className={window.location.pathname === '/cabling' ? 'actdive' : 'drop'} onClick={()=>navigate("/cabling")}> Cabling
                       </Box>
-        <Box className={window.location.pathname === '/earthing' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/earthing' ? 'actdive' : 'drop'} href='/earthing'> Earthing</Link> 
+        <Box className={window.location.pathname === '/earthing' ? 'actdive' : 'drop'} onClick={()=>navigate("/earthing")}> Earthing
                       </Box>
-                      <Box className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'} href='/breakers'> Breakers</Link> 
+                      <Box className={window.location.pathname === '/breakers' ? 'actdive' : 'drop'} onClick={()=>navigate("/breakers")}> Breakers
                       </Box> 
-                      <Box className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'} href='/solar-panel'> Solar Panel</Link> 
+                      <Box className={window.location.pathname === '/solar-panel' ? 'actdive' : 'drop'} onClick={()=>navigate("/solar-panel")}>Solar Panel
                       </Box> 
        
         
-        <Box className={window.location.pathname === '/load-managements' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/load-managements' ? 'actdive' : 'drop'} href='/load-managements'>Load Management Panels</Link> 
+        <Box className={window.location.pathname === '/load-managements' ? 'actdive' : 'drop'} onClick={()=>navigate("/load-managements")}>Load Management Panels
                       </Box>
                      
                     
-        <Box className={window.location.pathname === '/hospital-services' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/hospital-services' ? 'actdive' : 'drop'} href='/hospital-services'> Hospital Electrical Services</Link> 
+        <Box className={window.location.pathname === '/hospital-services' ? 'actdive' : 'drop'} onClick={()=>navigate("/hospital-services")}> Hospital Electrical Services
                       </Box>
-        <Box className={window.location.pathname === '/electrical-stations' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-stations' ? 'actdive' : 'drop'} href='/electrical-stations'> Electrical Sub Stations</Link> 
+        <Box className={window.location.pathname === '/electrical-stations' ? 'actdive' : 'drop'} onClick={()=>navigate("/electrical-stations")}> Electrical Sub Stations
                       </Box>
-        <Box className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'} href='/electrical-installation'>Electrical Installation Services</Link> 
+        <Box className={window.location.pathname === '/electrical-installation' ? 'actdive' : 'drop'} onClick={()=>navigate("/electrical-installation")}>Electrical Installation Services
                       </Box>
-        <Box className={window.location.pathname === '/electrical-quality' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-quality' ? 'actdive' : 'drop'} href='/electrical-quality'> Electrical Drive Quality</Link> 
+        <Box className={window.location.pathname === '/electrical-quality' ? 'actdive' : 'drop'} onClick={()=>navigate("/electrical-quality")}>Electrical Drive Quality
                       </Box>
 
        

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "./Slider";
 import About from "./About";
 import Ourproduct from "./Ourproduct";
@@ -10,6 +10,10 @@ import Location from "../../Common/Location";
 import HomeSlider from "./Slider";
 import Project from "./Project";
 const Home =()=>{
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, ["/home"]);
+
     return(
         <>
         <HomeSlider/>

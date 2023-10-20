@@ -6,7 +6,10 @@ import { ImPhone } from "react-icons/im";
 import { AiFillMail } from "react-icons/ai";
 import { SocialIcon } from "react-social-icons";
 import { FaWhatsapp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <Box className="remenu" zIndex={'99999'}>
@@ -32,47 +35,40 @@ const Footer = () => {
                                 <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                                 <HStack gap='40px'>
                                     <SimpleGrid columns={1} spacing={5} py='20px' >
-                                        <Label href="/electrical-panel">
+                                        <Label onClick={()=>navigate("/electrical-panel")}>
                                             Main LT Panels
                                         </Label>
-                                        <Label href="/motor-controls">
+                                        <Label  onClick={()=>navigate("/motor-controls")} >
                                             Motor Controls Panels
                                         </Label>
-                                        <Label href="/load-managements">
+                                        <Label onClick={()=>navigate("/load-managements")} >
                                             Load Management Panels
                                         </Label>
-                                        <Label href="/metering-panel">
+                                        <Label onClick={()=>navigate("/metering-panel")} >
                                             Metering Panels
                                         </Label>
-                                        <Label href="/amf-panels">
+                                        <Label onClick={()=>navigate("/amf-panels")} >
                                             AMF Panels
                                         </Label>
-                                        {/* <Label href="/cabling">
-                                            Cabling
-                                        </Label> */}
+                                       
                                     </SimpleGrid>
                                     <SimpleGrid columns={1} spacing={5} py='20px' >
-                                        <Label href="/VFD-panel">
+                                        <Label onClick={()=>navigate("/VFD-panel")} >
                                             VFD Panels
                                         </Label>
-                                        <Label href="/electrical-installation">
+                                        <Label onClick={()=>navigate("/electrical-installation")}>
                                             Electrical Installation Services
                                         </Label>
-                                        <Label href="/electrical-quality">
+                                        <Label onClick={()=>navigate("/electrical-quality")}>
                                             Electrical Drive Quality
                                         </Label>
-                                        <Label href="/earthing">
+                                        <Label onClick={()=>navigate("/earthing")}>
                                             Earthing
                                         </Label>
-                                        <Label href="/breakers">
+                                        <Label onClick={()=>navigate("/breakers")} >
                                             Breakers
                                         </Label>
-                                        {/* <Label href="/transformers">
-                                Transformers
-                                </Label> */}
-                                        {/* <Label href="/dg-synchronizing">
-                                            DG Synchronizing Panel
-                                        </Label> */}
+                                    
                                     </SimpleGrid>
 
                                 </HStack>
@@ -83,19 +79,19 @@ const Footer = () => {
                                 <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                                 <SimpleGrid columns={1} spacing={5} py='20px'  >
 
-                                    <Label href="/home">
+                                    <Label onClick={()=>navigate("/home")} >
                                         Home
                                     </Label>
-                                    <Label href="/about">
+                                    <Label onClick={()=>navigate("/about")} >
                                         About
                                     </Label>
-                                    <Label href="/dg-synchronizing">
+                                    <Label onClick={()=>navigate("/dg-synchronizing")}>
                                         Service Range
                                     </Label>
-                                    <Label href="/client">
+                                    <Label onClick={()=>navigate("/clients")} >
                                         Our Client
                                     </Label>
-                                    <Label href="/contact">
+                                    <Label onClick={()=>navigate("/contact")} >
                                         Contact
                                     </Label>
                                 </SimpleGrid>
@@ -138,53 +134,43 @@ const Footer = () => {
                                 <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                                 {/* <HStack gap='40px'> */}
                                 <SimpleGrid columns={1} spacing={5} py='20px' >
-                                    <Label href="/electrical-panel">
-                                        Main LT Panels
-                                    </Label>
-                                    <Label href="/motor-controls">
-                                        Motor Controls Panels
-                                    </Label>
-                                    <Label href="/load-managements">
-                                        Load Management Panels
-                                    </Label>
-                                    <Label href="metering-panel">
-                                        Metering Panels
-                                    </Label>
-                                    <Label href="/amf-panels">
-                                        AMF Panels
-                                    </Label>
-                                    <Label href="/cabling">
-                                        Cabling
-                                    </Label>
+                                <Label onClick={()=>navigate("/electrical-panel")}>
+                                            Main LT Panels
+                                        </Label>
+                                        <Label  onClick={()=>navigate("/motor-controls")} >
+                                            Motor Controls Panels
+                                        </Label>
+                                        <Label onClick={()=>navigate("/load-managements")} >
+                                            Load Management Panels
+                                        </Label>
+                                        <Label onClick={()=>navigate("/metering-panel")} >
+                                            Metering Panels
+                                        </Label>
+                                        <Label onClick={()=>navigate("/amf-panels")} >
+                                            AMF Panels
+                                        </Label>
+                                       
                                 </SimpleGrid>
                                 <SimpleGrid columns={1} spacing={5} py='20px' >
-                                    <Label href="/VFD-panel">
-                                        VFD Panels
-                                    </Label>
-                                    <Label href="/electrical-installation">
-                                        Electrical Installation Services
-                                    </Label>
-                                    <Label href="/electrical-quality">
-                                        Electrical Drive Quality
-                                    </Label>
-                                    {/* <Label href="/transmission-lines">
-                                    Transmission Lines
-                                </Label> */}
-                                    <Label href="/earthing">
-                                        Earthing
-                                    </Label>
-                                    <Label href="/breakers">
-                                        Breakers
-                                    </Label>
-                                    {/* <Label href="/transformers">
-                                Transformers
-                                </Label> */}
-                                    <Label href="/dg-synchronizing">
-                                        DG Synchronizing Panel
-                                    </Label>
+                                <Label onClick={()=>navigate("/VFD-panel")} >
+                                            VFD Panels
+                                        </Label>
+                                        <Label onClick={()=>navigate("/electrical-installation")}>
+                                            Electrical Installation Services
+                                        </Label>
+                                        <Label onClick={()=>navigate("/electrical-quality")}>
+                                            Electrical Drive Quality
+                                        </Label>
+                                        <Label onClick={()=>navigate("/earthing")}>
+                                            Earthing
+                                        </Label>
+                                        <Label onClick={()=>navigate("/breakers")} >
+                                            Breakers
+                                        </Label>
+                                    
+                                  
                                 </SimpleGrid>
 
-                                {/* </HStack>  */}
 
                             </GridItem>
                             <GridItem colSpan={1} >
@@ -192,19 +178,19 @@ const Footer = () => {
                                 <Divider orientation='horizontal' border='1.5px solid #bd0000' width='50px' />
                                 <SimpleGrid columns={1} spacing={5} py='20px'  >
 
-                                    <Label href="/home">
+                                <Label onClick={()=>navigate("/home")}>
                                         Home
                                     </Label>
-                                    <Label href="/about">
+                                    <Label onClick={()=>navigate("/about")}>
                                         About
                                     </Label>
-                                    <Label href="/dg-synchronizing">
+                                    <Label onClick={()=>navigate("/dg-synchronizing")} >
                                         Service Range
                                     </Label>
-                                    <Label href="/client">
+                                    <Label onClick={()=>navigate("/clients")}>
                                         Our Client
                                     </Label>
-                                    <Label href="/contact">
+                                    <Label onClick={()=>navigate("/contact")} >
                                         Contact
                                     </Label>
                                 </SimpleGrid>

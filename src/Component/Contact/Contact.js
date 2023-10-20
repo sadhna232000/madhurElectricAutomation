@@ -5,7 +5,12 @@ import Footer from "../../Common/Footer";
 import { MedHeading, Parcontent } from "../../Common/Style";
 import { ImLocation2, ImPhone } from "react-icons/im";
 import { AiFillMail } from "react-icons/ai";
+import { useEffect } from "react";
 const Contact=()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/contact"]);
+    
     const email = 'madhurelectric@gmail.com';
     return(
         <>

@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -9,6 +9,9 @@ import Footer from "../../Common/Footer";
 import junction from "../../Assets/juction-box.png"
 import { FaCheck } from "react-icons/fa";
 const HospitalServices = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/hospital-services"]);
     return (
         <>
             <Breadcrumbs name='HOSPITAL ELECTRICAL SERVICES' home='Home' page='Hospital Electrical Services' />

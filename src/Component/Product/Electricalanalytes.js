@@ -1,6 +1,6 @@
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, Img, Stack } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -8,6 +8,9 @@ import Sidebar from "../../Common/Sidebar";
 import Footer from "../../Common/Footer";
 import junction from "../../Assets/juction-box.png"
 const Electricalanalytes =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/electrical-quality"]);
     return(
         <>
           <Breadcrumbs name='ELECTRICAL DRIVE QUALITY' home='Home' page='Electrical Drive Quality' />

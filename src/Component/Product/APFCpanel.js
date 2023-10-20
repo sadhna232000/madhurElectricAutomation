@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -8,6 +8,9 @@ import VFD from "../../Assets/VFD.jpg"
 import electric_10 from "../../Assets/electric_10.jpg"
 import { FaCheck } from "react-icons/fa";
 const APFCpanel =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/VFD-panel"]);
     return(
         <>
           <Breadcrumbs name='VFD PANELS' home='Home' page='VFD Panels' />

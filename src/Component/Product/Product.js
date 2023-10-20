@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import Footer from "../../Common/Footer";
@@ -7,6 +7,9 @@ import { MedHeading, Parcontent, Prolabel } from "../../Common/Style";
 import Sidebar from "../../Common/Sidebar";
 import { FaCheck } from "react-icons/fa";
 const Product=()=>{
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, ["/breakers"]);
     return(
         <>
  <Breadcrumbs name='BREAKERS' home='Home' page='Breakers' />

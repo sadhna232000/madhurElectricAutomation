@@ -58,8 +58,9 @@ function Navbar() {
     boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
                }}>
         <VStack p={4} alignItems="start" spacing={4}>
-              <Link className={window.location.pathname === '/home' ? 'mbact' : 'mbnav'}href='/home' >Home</Link>
-              <Link className={window.location.pathname === '/about' ? 'mbact' : 'mbnav'} href='/about'> About</Link>
+        <Box className={window.location.pathname === '/home' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/home")}>Home     </Box>
+        <Box className={window.location.pathname === '/about' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/about")}>About     </Box>
+             
               <Menu>          
                        <MenuButton as={Button} _expanded={{ bg: '#bd0000', color: '#fff !important', borderRadius: '0px', }}border='none'  bg='none'textAlign='start' width='100% !important' p='7px 15px'  fontSize= '14px'
     fontWeight= '600'
@@ -72,244 +73,99 @@ function Navbar() {
               
                <Collapse in={isOpen2} 
              
-    //            position= 'sticky'
-    // top= '60px'
-    // z-index= '999999'
-    // backgroundColor= '#fff' 
-    // boxShadow='rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
+    //         
      >
                <Grid templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={2} >
                    <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                  <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href='/electrical-panel'>Main LT Panels</Link>
+                   <Box className={window.location.pathname === '/electrical-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-panel")}>Main LT Panels</Box>
+
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/motor-controls"> Motor Controls Panels</Link>
+                    <Box className={window.location.pathname === '/motor-controls' ? 'navside' : 'navside'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels</Box>
+
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/metering-panel">Metering Panel</Link>
+                    <Box className={window.location.pathname === '/metering-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/metering-panel")}>Metering Panel</Box>
+
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/amf-panels">AMF Panel</Link>
+                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/AMF Panel")}>Metering Panel</Box>
+
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/VFD-panel"> VFD Panels</Link>
-                    </MenuItem>
-                    {/* <MenuItem bg='#fff !important' border='none !important'  p='5px 15px'borderBottom='1px dashed darkgray !important'> */}
+                    <Box className={window.location.pathname === '/VFD-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/VFD-panel")}> VFD Panels</Box>
 
-                    {/* <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/transmission-lines">Transmission Lines</Link>
-    </MenuItem> */}
+                    </MenuItem>
+
+        
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/earthing"> Earthing</Link>
+                    <Box className={window.location.pathname === '/earthing' ? 'navside' : 'navside'} onClick={()=>navigate("/earthing")}>  Earthing</Box>
+
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/breakers">Breaker</Link>
+                    <Box className={window.location.pathname === '/breakers' ? 'navside' : 'navside'} onClick={()=>navigate("/breakers")}>Breakers</Box>
+
                     </MenuItem>
 
-                    {/* <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/transformers">Transformers</Link>
-    </MenuItem> */}
+                  
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px'   borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/load-managements">Load Management Panels</Link>
+                    <Box className={window.location.pathname === '/load-managements' ? 'navside' : 'navside'} onClick={()=>navigate("/load-managements")}>Load Management Panels</Box>
+
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/dg-synchronizing"> DG Synchronizing Panel</Link>
+                    <Box className={window.location.pathname === '/dg-synchronizing' ? 'navside' : 'navside'} onClick={()=>navigate("/dg-synchronizing")}> DG Synchronizing Panel</Box>
+
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/cabling">Cabling</Link>
+                    <Box className={window.location.pathname === '/cabling' ? 'navside' : 'navside'} onClick={()=>navigate("/cabling")}>Cabling</Box>
+
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/solar-panel">Solar Panel</Link>
+                    <Box className={window.location.pathname === '/solar-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/solar-panel")}>Solar Panel</Box>
+
                     </MenuItem>
 
 
-                    {/* <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/HT-LT-distribution-panel">HT / LT Distribution Panel</Link>
-    </MenuItem> */}
+                   
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-installation">Electrical Installations Services</Link>
+                    <Box className={window.location.pathname === '/electrical-installation' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-installation")}>Electrical Installations Services</Box>
+
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/hospital-services">Hospital Electrical Services</Link>
+                    <Box className={window.location.pathname === '/hospital-services' ? 'navside' : 'navside'} onClick={()=>navigate("/hospital-services")}>Hospital Electrical Services</Box>
+
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-quality">Electrical Drive Quality</Link>
+                    <Box className={window.location.pathname === '/electrical-quality' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-quality")}>Electrical Drive Quality</Box>
+
                     </MenuItem>
 
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-stations">Electical Sub Stations</Link>
+                    <Box className={window.location.pathname === '/electrical-stations' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-stations")}>Electical Sub Stations</Box>
+
                     </MenuItem>
 
 
@@ -318,9 +174,10 @@ function Navbar() {
                </Collapse>
                
                </Menu>
-              <Link className={window.location.pathname === '/clients' ? 'mbact' : 'mbnav'} href='/clients'> Our Clients</Link>
-              <Link className={window.location.pathname === '/contact' ? 'mbact' : 'mbnav'} href='/contact'> Contact</Link>
-         
+              <Box className={window.location.pathname === '/clients' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/clients")}>Our Clients     
+</Box>
+              <Box className={window.location.pathname === '/contact' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/contact")}>Contact     
+</Box>
         </VStack>
       </Collapse>
   
@@ -331,14 +188,12 @@ function Navbar() {
     <Link href='/home'>  <Img src={Logo} h='95px' objectPosition={'center'} />    </Link>     
       <Spacer />
           <HStack gap='10px'>            
-           <Box className={window.location.pathname === '/home' ? 'act' : 'nav'}>
-              <Link className={window.location.pathname === '/home' ? 'active' : 'nav'} href='/home'> Home</Link>
+           <Box className={window.location.pathname === '/home' ? 'act' : 'nav'}  onClick={()=>navigate("/home")}>Home
         </Box    >       
-           <Box className={window.location.pathname === '/about' ? 'act' : 'nav'}>     
-                     <Link className={window.location.pathname === '/about' ? 'active' : 'nav'} href="/about"> About</Link>
+           <Box className={window.location.pathname === '/about' ? 'act' : 'nav'} onClick={()=>navigate("/about")}>About     
             </Box>         
                 <Menu>          
-                       <MenuButton bg='none !important' borderRadius= '50px' as={Button} _expanded={{ bg: '#bd0000 !important', color: '#fff !important', borderRadius: '50px' }} rightIcon={<RiArrowDropDownLine  fontSize='20px'/>}>
+                       <MenuButton bg='none !important' borderRadius= '50px' h='35px !important' as={Button} _expanded={{ bg: '#bd0000 !important', color: '#fff !important', borderRadius: '50px' }} rightIcon={<RiArrowDropDownLine  fontSize='20px'/>}>
                   Service Range
                </MenuButton>
              <MenuList p='20px' pt='15px' w='400px !important' bg='#fff !important' border='0.5px solid #e7e1e1'>
@@ -351,229 +206,60 @@ function Navbar() {
                     <Box className={window.location.pathname === '/motor-controls' ? 'navside' : 'navside'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels</Box>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-                    <Box className={window.location.pathname === '/motor-controls' ? 'navside' : 'navside'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels</Box>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/metering-panel">Metering Panel</Link>
+                    <Box className={window.location.pathname === '/metering-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/metering-panel")}>Metering Panel</Box>
                     </MenuItem>
+                  
                     <MenuItem bg='#fff !important' border='none !important' p='5px'  h='40px'borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/amf-panels">AMF Panel</Link>
+                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/AMF Panel")}>Metering Panel</Box>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/VFD-panel"> VFD Panels</Link>
-                    </MenuItem>
-                    {/* <MenuItem bg='#fff !important' border='none !important'  p='5px'borderBottom='1px dashed darkgray !important'> */}
-
-                    {/* <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/transmission-lines">Transmission Lines</Link>
-    </MenuItem> */}
-
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/earthing"> Earthing</Link>
+                    <Box className={window.location.pathname === '/VFD-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/VFD-panel")}> VFD Panels</Box>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/breakers">Breaker</Link>
-                    </MenuItem>
-
-                    {/* <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/transformers">Transformers</Link>
-    </MenuItem> */}
-
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/load-managements">Load Management Panels</Link>
+                    <Box className={window.location.pathname === '/earthing' ? 'navside' : 'navside'} onClick={()=>navigate("/earthing")}>  Earthing</Box>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/dg-synchronizing"> DG Synchronizing Panel</Link>
+                    <Box className={window.location.pathname === '/breakers' ? 'navside' : 'navside'} onClick={()=>navigate("/breakers")}>Breakers</Box>
+                    </MenuItem>
+                          <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                          <Box className={window.location.pathname === '/load-managements' ? 'navside' : 'navside'} onClick={()=>navigate("/load-managements")}>Load Management Panels</Box>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/cabling">Cabling</Link>
-                    </MenuItem>
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/solar-panel">Solar Panel</Link>
-                    </MenuItem>
-
-
-                    {/* <MenuItem bg='#fff !important' border='none !important' p='5px' borderBottom='1px dashed darkgray !important'>
-      
-      <Link 
-    fontSize= '14px'
-    paddingBottom='5px'
-    fontWeight= '500'
-    letterSpacing='1px'
-    fontFamily= 'sans-serif'
-    color= '#808080'
-           textDecoration='none !important'
-            cursor='pointer' href="/HT-LT-distribution-panel">HT / LT Distribution Panel</Link>
-    </MenuItem> */}
-                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-installation">Electrical Installations Services</Link>
+                    <Box className={window.location.pathname === '/dg-synchronizing' ? 'navside' : 'navside'} onClick={()=>navigate("/dg-synchronizing")}> DG Synchronizing Panel</Box>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/hospital-services">Hospital Electrical Services</Link>
+                    <Box className={window.location.pathname === '/cabling' ? 'navside' : 'navside'} onClick={()=>navigate("/cabling")}>Cabling</Box>
+                    </MenuItem>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                    <Box className={window.location.pathname === '/solar-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/solar-panel")}>Solar Panel</Box>
+                    </MenuItem>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                    <Box className={window.location.pathname === '/electrical-installation' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-installation")}>Electrical Installations Services</Box>
                     </MenuItem>
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                    <Box className={window.location.pathname === '/hospital-services' ? 'navside' : 'navside'} onClick={()=>navigate("/hospital-services")}>Hospital Electrical Services</Box>
+                    </MenuItem>
 
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-quality">Electrical Drive Quality</Link>
+                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                    <Box className={window.location.pathname === '/electrical-quality' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-quality")}>Electrical Drive Quality</Box>
                     </MenuItem>
 
 
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href="/electrical-stations">Electical Sub Stations</Link>
+                    <Box className={window.location.pathname === '/electrical-stations' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-stations")}>Electical Sub Stations</Box>
                     </MenuItem>
-
-
-                  </Grid>
-
-                </MenuList>
+                    </Grid>
+                    </MenuList>
               </Menu>
-              <Box className={window.location.pathname === '/clients' ? 'act' : 'nav'}>
-                <Link className={window.location.pathname === '/clients' ? 'active' : 'nav'} href='/clients'> Our Clients</Link>
+              <Box className={window.location.pathname === '/clients' ? 'act' : 'nav'} onClick={()=>navigate("/clients")}>Our Clients
               </Box>
-              <Box className={window.location.pathname === '/contact' ? 'act' : 'nav'}>
-                <Link className={window.location.pathname === '/contact' ? 'active' : 'nav'} href='/contact'> Contact</Link>
+              <Box className={window.location.pathname === '/contact' ? 'act' : 'nav'} onClick={()=>navigate("/contact")} >Contact
               </Box>
-
-
-
-
             </HStack>
           </Flex>
         </Container>
@@ -587,56 +273,3 @@ export default Navbar;
 
 
 
-//       
-// {/* /*Mobile view navbar */}
-//       <Box
-//       className="respnev2"
-//         position="sticky"
-//         top="-1px"
-//         p="5px"
-//         zIndex="9999999"
-//         bg="#fff"
-//         borderBottom="1px solid #80808038"
-//         boxShadow="rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
-//       >
-//         <Container maxW="100%" m="auto">
-//           <Flex
-// justifyContent='space-between'            alignItems="center"
-//           >
-//             <Img src={Logo} h="95px" objectPosition="center" />
-//             <Spacer />
-
-//             <Menu>
-//               <MenuButton
-//                 as={Button}
-//                 _expanded={{
-//                   bg: "#bd0000",
-//                   color: "#fff !important",
-//                   // borderRadius: "50px"
-//                 }}
-//                 rightIcon={<VscThreeBars />}
-//               >
-               
-//               </MenuButton>
-//               <MenuList>
-//     <MenuItem><Link className ='nav' href='/home'> Home</Link></MenuItem>
-//     <MenuItem>Create a Copy</MenuItem>
-//     <MenuItem>Mark as Draft</MenuItem>
-//     <MenuItem>Delete</MenuItem>
-//     <MenuItem>Attend a Workshop</MenuItem>
-//   </MenuList>
-//             </Menu>
-
-//             {/* <Box className={window.location.pathname === "/contact" ? "act" : "nav"}>
-//               <Link className={window.location.pathname === "/contact" ? "active" : "nav"} href="/contact">Contact</Link>
-//             </Box> */}
-//           </Flex>
-//         </Container>
-//       </Box>
-
-
-
-//     </>
-//   )
-// }
-// export default Navbar

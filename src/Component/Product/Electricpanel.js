@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -11,6 +11,9 @@ import { CgCheck } from "react-icons/cg";
 import { FaCheck } from "react-icons/fa";
 
 const Electricpanel = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/electrical-panel"]);
     return (
         <>
             <Breadcrumbs name='MAIN LT PANELS' home='Home' page='Main LT Panels' />

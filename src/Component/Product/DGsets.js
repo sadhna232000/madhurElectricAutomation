@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Box, Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -10,6 +10,9 @@ import electric_8 from "../../Assets/electric_8.jpg"
 import electric_1 from "../../Assets/electric_1.jpg"
 import { FaCheck } from "react-icons/fa";
 const DGsets =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/dg-synchronizing"]);
     return(
         <>
           <Breadcrumbs name='DG SYNCHRONIZING PANEL' home='Home' page='DG Synchronizing Panel' />

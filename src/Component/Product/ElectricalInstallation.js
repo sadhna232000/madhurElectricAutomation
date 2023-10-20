@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumbs from "../../Common/Breadcrumbs";
 import { Container, Divider, Grid, GridItem, HStack, Img, Stack, Text } from "@chakra-ui/react";
 import { MedHeading, Parcontent } from "../../Common/Style";
@@ -8,6 +8,9 @@ import Footer from "../../Common/Footer";
 import junction from "../../Assets/juction-box.png"
 import { FaCheck } from "react-icons/fa";
 const Electricalinstallation =()=>{
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, ["/electrical-installation"]);
     return(
         <>
           <Breadcrumbs name='ELECTRICAL INSTALLATION SERVICES' home='Home' page='Electrical Installation Services' />
