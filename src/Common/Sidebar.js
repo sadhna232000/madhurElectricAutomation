@@ -1,13 +1,17 @@
 import { Box, Link, Stack } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 const Sidebar =()=>{
+  const navigate = useNavigate();
+
     return(
         <>
         
         <Stack gap={4}>
        
-        <Box className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'}>
-                    <Link  className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} href='/electrical-panel'>Main LT Panels</Link> 
+        <Box className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} onClick={()=>navigate("/electrical-panel")}>Main LT Panels
+
+                    {/* <Link  className={window.location.pathname === '/electrical-panel' ? 'actdive' : 'drop'} href='/electrical-panel'></Link>  */}
                       </Box>
                       <Box className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'}>
                     <Link  className={window.location.pathname === '/motor-controls' ? 'actdive' : 'drop'} href='/motor-controls'> Motor Controls Panels</Link> 

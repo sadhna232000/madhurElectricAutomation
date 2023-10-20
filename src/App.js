@@ -58,11 +58,12 @@ function App() {
 
      <ChakraProvider >
       {/* <CSSReset /> */}
-    <SubNavbar/>
-      <Navbar/>
+    
 <Router>
-
+<SubNavbar/>
+      <Navbar/>
   <Routes>
+  
     <Route path="/home" element={<Home />} />
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
@@ -93,14 +94,7 @@ function App() {
 
 }
 </>
-    // <ChakraProvider theme={theme}>
-    /* <Box textAlign="center" fontSize="xl">
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <SubNavbar/>
-      <Navbar/>
-      <Home/>
-      </Box> */
-    // </ChakraProvider>
+   
   );
 }
 

@@ -25,11 +25,13 @@ import { Label, Top } from "./Style";
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { VscThreeBars } from 'react-icons/vsc';
 import Logo from "../Assets/mdlogo.png"
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { isOpen: isOpen2, onToggle: onToggle2 } = useDisclosure();
- 
+  const navigate = useNavigate();
+
 
   return (
     <>
@@ -332,8 +334,8 @@ function Navbar() {
            <Box className={window.location.pathname === '/home' ? 'act' : 'nav'}>
               <Link className={window.location.pathname === '/home' ? 'active' : 'nav'} href='/home'> Home</Link>
         </Box    >       
-           <Box className={window.location.pathname === '/about' ? 'act' : 'nav'} href='/about'>     
-                     <Link className={window.location.pathname === '/about' ? 'active' : 'nav'} href='/about'> About</Link>
+           <Box className={window.location.pathname === '/about' ? 'act' : 'nav'}>     
+                     <Link className={window.location.pathname === '/about' ? 'active' : 'nav'} href="/about"> About</Link>
             </Box>         
                 <Menu>          
                        <MenuButton bg='none !important' borderRadius= '50px' as={Button} _expanded={{ bg: '#bd0000 !important', color: '#fff !important', borderRadius: '50px' }} rightIcon={<RiArrowDropDownLine  fontSize='20px'/>}>
@@ -343,32 +345,13 @@ function Navbar() {
 
                   <Grid templateColumns="repeat(2, 1fr)" columnGap={5} rowGap={3} >
                    <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                  <Link
-                        fontSize='14px'
-                        // borderBottom='1px dashed darkgray !important'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer' href='/electrical-panel'>Main LT Panels</Link>
+                   <Box className={window.location.pathname === '/electrical-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-panel")}>Main LT Panels</Box>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
-
-                      <Link
-                        fontSize='14px'
-                        paddingBottom='5px'
-                        fontWeight='500'
-                        letterSpacing='1px'
-                        fontFamily='sans-serif'
-                        color='#808080'
-                        textDecoration='none !important'
-                        cursor='pointer'
-                        href="/motor-controls"> Motor Controls Panels</Link>
+                    <Box className={window.location.pathname === '/motor-controls' ? 'navside' : 'navside'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels</Box>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
+                    <Box className={window.location.pathname === '/motor-controls' ? 'navside' : 'navside'} onClick={()=>navigate("/motor-controls")}> Motor Controls Panels</Box>
 
                       <Link
                         fontSize='14px'
