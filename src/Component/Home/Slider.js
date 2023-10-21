@@ -42,9 +42,9 @@ const HomeSlider = () => {
                         </Text>
                         <HStack gap={10} justifyContent='center' pt='30px'>
                        <Box  data-aos="fade-right" data-aos-duration="3000"   > <CustomButton 
-                   href="/about"
+                   click="/about"
                        class='sliding-button' border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
-                       <Box  data-aos="fade-left" data-aos-duration="3000"> <CustomButton   href="/contact"  border='none' content='CONTACT' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
+                       <Box  data-aos="fade-left" data-aos-duration="3000"> <CustomButton   click="/contact"  border='none' content='CONTACT' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
                         </HStack>
                         </Stack></Center>
                 <Box bg={'#161617a6'} h='590px' w='100%' position='absolute' opacity='0.5'>
@@ -90,9 +90,9 @@ const HomeSlider = () => {
                         </Text>
                         <VStack gap={5} justifyContent='center' pt='30px'>
                        <Box    > <CustomButton 
-                   href="/about"
+                   click="/about"
                        class='sliding-button' border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
-                       <Box > <CustomButton   href="/contact"  border='none' content='CONTACT' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
+                       <Box > <CustomButton   click="/contact"  border='none' content='CONTACT' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Box>
                         </VStack>
                         </Stack></Center>
                 <Box bg={'#161617a6'} h='590px' w='100%' position='absolute' opacity='0.5'>

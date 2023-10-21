@@ -45,7 +45,7 @@ APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Projects, DG Set
 vigilance of "Mr. Vishnu Gour", the company has served its customers 
 competently.
           </Parcontent>
-                       <Center> <CustomButton href="/about" border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Center>
+                       <Center> <CustomButton click="/about" border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Center>
 
                     </GridItem>
 
@@ -91,7 +91,7 @@ APFC Panels, VFD Panel, Electrical Services, Turnkey Electrical Projects, DG Set
 vigilance of "Mr. Vishnu Gour", the company has served its customers 
 competently.
           </Parcontent>
-                       <Center> <CustomButton href="/about" border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Center>
+                       <Center> <CustomButton click="/about" border='none' content='DISCOVER MORE' radius='0' width='180px' height='45px' size='14px' color='#fff' bgcolor='#bd0000'/></Center>
 
                     </GridItem>
 

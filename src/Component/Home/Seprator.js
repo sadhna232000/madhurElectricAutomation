@@ -13,7 +13,7 @@ const Seprator = () => {
                     letterSpacing='1px'
                     fontSize='18px' lineHeight={'30px'}>
   ONE STOP SOLUTION FOR ALL ELECTRICAL NEED                        </Text>         
-                  <CustomButton href="/contact" border='none' content='CONTACT US' radius='0' width='180px' height='45px' size='14px' color='#bd0000' bgcolor='#fff'/>
+                  <CustomButton click="/contact" border='none' content='CONTACT US' radius='0' width='180px' height='45px' size='14px' color='#bd0000' bgcolor='#fff'/>
 </HStack></Box>
 
             </Container>
@@ -30,7 +30,7 @@ const Seprator = () => {
                     letterSpacing='1px'
                     fontSize='16px' lineHeight={'28px'} textAlign='center'>
   ONE STOP SOLUTION FOR ALL ELECTRICAL NEED                        </Text>         
-                  <CustomButton href="/contact" border='none' content='CONTACT US' radius='0' width='180px' height='45px' size='14px' color='#bd0000' bgcolor='#fff'/>
+                  <CustomButton click="/contact" border='none' content='CONTACT US' radius='0' width='180px' height='45px' size='14px' color='#bd0000' bgcolor='#fff'/>
 </VStack></Box>
 
             </Container>

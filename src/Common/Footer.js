@@ -5,11 +5,14 @@ import { Content, Label, MedHeading, Parcontent } from "./Style";
 import { ImPhone } from "react-icons/im";
 import { AiFillMail } from "react-icons/ai";
 import { SocialIcon } from "react-social-icons";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGooglePlusG, FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 const Footer = () => {
     const navigate = useNavigate();
-
+    const openGmail = () => {
+        const mailtoLink = 'https://mail.google.com/mail/u/0/#inbox';
+        window.open(mailtoLink, '_blank');
+    };
     return (
         <>
             <Box className="remenu" zIndex={'99999'}>
@@ -23,12 +26,17 @@ const Footer = () => {
                                 <HStack pb='10px'><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectric@gmail.com</Parcontent></HStack>
                                 <HStack gap='15px'>
                                     <SocialIcon  target="_blank" url="https://facebook.com"   style={{ width: '30px', height: '30px' }} />
-                                    <SocialIcon target="_blank" url="https://google.com" style={{ width: '30px', height: '30px' }} />
-                                    <a href="https://wa.me/919414046267" target="_blank">
-        <Circle size='33px' bg='green' color='white'>
-    <FaWhatsapp fontSize='20px' />
-  </Circle>
-</a>                                </HStack>
+                                    <a onClick={openGmail} target="_blank" >
+                                    <Circle size='30px' bg='#c00404' color='white' cursor='pointer'>
+                                        <FaGooglePlusG fontSize='19px' />
+                                    </Circle>
+                                </a>
+                                {/* <SocialIcon target="_blank" onClick={openGmail}  style={{ width:'30px' , height:'30px' }}  /> */}
+                                <a href="https://wa.me/919414046267" target="_blank"  cursor='pointer'>
+                                    <Circle size='31px' bg='green' color='white'>
+                                        <FaWhatsapp fontSize='20px' />
+                                    </Circle>
+                                </a>    </HStack>
                             </GridItem>
                             <GridItem colSpan={1} w='400px'>
                                 <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>
@@ -122,12 +130,17 @@ const Footer = () => {
                                 <Box><HStack justifyContent='center'><AiFillMail color="#000" fontSize={'15px'} /> <Parcontent>madhurelectric@gmail.com</Parcontent></HStack></Box>
                                 <HStack gap='15px' justifyContent='center' pt='15px'>
                                     <SocialIcon  target="_blank" url="https://facebook.com"   style={{ width: '30px', height: '30px' }} />
-                                    <SocialIcon target="_blank" url="https://google.com" style={{ width: '30px', height: '30px' }} />
-                                    <a href="https://wa.me/919414046267" target="_blank">
-        <Circle size='33px' bg='green' color='white'>
-    <FaWhatsapp fontSize='20px' />
-  </Circle>
-</a>                                </HStack>
+                                    <a onClick={openGmail} target="_blank" >
+                                    <Circle size='30px' bg='#c00404' color='white' cursor='pointer'>
+                                        <FaGooglePlusG fontSize='19px' />
+                                    </Circle>
+                                </a>
+                                {/* <SocialIcon target="_blank" onClick={openGmail}  style={{ width:'30px' , height:'30px' }}  /> */}
+                                <a href="https://wa.me/919414046267" target="_blank"  cursor='pointer'>
+                                    <Circle size='31px' bg='green' color='white'>
+                                        <FaWhatsapp fontSize='20px' />
+                                    </Circle>
+                                </a>      </HStack>
                             </GridItem>
                             <GridItem>
                                 <MedHeading pb='10px' fontSize='16px !important'>Service Range</MedHeading>
