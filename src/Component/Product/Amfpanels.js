@@ -24,7 +24,7 @@ const Amfpanels = () => {
                 >
                     <GridItem colSpan={4}>
                         <Stack>
-                            <Img src={electric_2} h='475px'  objectFit='cover' objectPosition='bottom'/>
+                            <Img src={electric_2} objectFit='cover' objectPosition='bottom'/>
 
                             <MedHeading pb='10px' pt='20px'>AMF CUM LT PANEL</MedHeading>
                             <Divider orientation='horizontal' border='1.5px solid #bd0000' width='100px' />

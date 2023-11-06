@@ -31,7 +31,12 @@ function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { isOpen: isOpen2, onToggle: onToggle2 } = useDisclosure();
   const navigate = useNavigate();
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Add state for the dropdown
 
+  // Function to close the dropdown
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
 
   return (
     <>
@@ -50,32 +55,42 @@ function Navbar() {
             onClick={onToggle}
           />
           </HStack>
-          <Collapse in={isOpen}   style={{
+          <Collapse in={isOpen}  
+           style={{
                 position: 'sticky',
     top: '60px',
     zIndex: '999999',
     backgroundColor: '#fff',
     boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
-               }}>
+               }}
+               >
         <VStack p={4} alignItems="start" spacing={4}>
-        <Box className={window.location.pathname === '/home' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/home")}>Home     </Box>
-        <Box className={window.location.pathname === '/about' ? 'mbact' : 'mbnav'} onClick={()=>navigate("/about")}>About     </Box>
+        <Box className={window.location.pathname === '/home' ? 'mbact' : 'mbnav'} 
+        
+        onClick={()=>{
+          closeDropdown();
+          navigate("/home")}}
+        >Home     </Box>
+        <Box className={window.location.pathname === '/about' ? 'mbact' : 'mbnav'} onClick={()=>{  closeDropdown(); navigate("/about")}}>About     </Box>
              
               <Menu>          
                        <MenuButton as={Button} _expanded={{ bg: '#bd0000', color: '#fff !important', borderRadius: '0px', }}border='none'  bg='none'textAlign='start' width='100% !important' p='7px 15px'  fontSize= '14px'
     fontWeight= '600'
-    rightIcon={isOpen2? <RiArrowDropDownLine /> : <RiArrowDropDownLine />}
+    rightIcon={isOpen2? <RiArrowDropDownLine  fontSize='25px'/> : <RiArrowDropDownLine fontSize='25px' />}
     fontFamily= 'system-ui' 
     onClick={onToggle2}
     >
                   Service Range
                </MenuButton>
               
-               <Collapse in={isOpen2} 
-             
-    //         
-     >
-               <Grid templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={2} >
+               <Collapse in={isOpen2}  style={{ width: '100%', }}
+     > 
+   
+               <Grid  height= '250px !important' 
+    //            height= '200px !important'
+    overflow= 'auto !important'
+    // width= '100% !important'   
+             templateColumns="repeat(1, 1fr)" columnGap={20} rowGap={2} >
                    <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
                    <Box className={window.location.pathname === '/electrical-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/electrical-panel")}>Main LT Panels</Box>
@@ -93,7 +108,7 @@ function Navbar() {
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
 
-                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/AMF Panel")}>Metering Panel</Box>
+                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/AMF Panel")}>AMF Panel</Box>
 
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px 15px' borderBottom='1px dashed darkgray !important'>
@@ -210,7 +225,7 @@ function Navbar() {
                     </MenuItem>
                   
                     <MenuItem bg='#fff !important' border='none !important' p='5px'  h='40px'borderBottom='1px dashed darkgray !important'>
-                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/AMF Panel")}>Metering Panel</Box>
+                    <Box className={window.location.pathname === '/amf-panels' ? 'navside' : 'navside'} onClick={()=>navigate("/amf-panels")}>AMF Panel</Box>
                     </MenuItem>
                     <MenuItem bg='#fff !important' border='none !important' p='5px' h='40px' borderBottom='1px dashed darkgray !important'>
                     <Box className={window.location.pathname === '/VFD-panel' ? 'navside' : 'navside'} onClick={()=>navigate("/VFD-panel")}> VFD Panels</Box>
